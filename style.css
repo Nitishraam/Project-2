@@ -35,7 +35,7 @@ nav {
   justify-content: space-evenly;
 }
 .main-menu img {
-  width: 15%;
+  width: 10%;
 }
 .menu-child {
   width: 80%;
@@ -44,10 +44,10 @@ nav {
   justify-content: space-evenly;
 }
 .menu-list2 {
-  width: 75%;
+  /* width: 80%; */
   /* background-color: aqua; */
   display: flex;
-  gap: 70px;
+  gap: 60px;
   align-items: center;
   justify-content: center;
 }
