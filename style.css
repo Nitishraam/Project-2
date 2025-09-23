@@ -303,7 +303,9 @@ swiper-slide img {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
+.card p{
+  font-weight: 500;
+}
 .causes {
   max-width: 1200px;
   margin: 40px auto;
@@ -526,7 +528,7 @@ swiper-slide img {
   flex-wrap: wrap;
   padding: 60px 20px;
   /* background: rgba(0, 0, 50, 0.6); */
-  background-image: url("https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2022/08/counter-bg-1-1.jpg");
+  /* background-image: url("https://wordpress.vecurosoft.com/techbiz/wp-content/uploads/2022/08/counter-bg-1-1.jpg"); */
   margin-top: 70px;
 }
 
@@ -732,7 +734,7 @@ swiper-slide img {
 
 .footer-title {
   font-size: 1.4rem;
-   background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
+   background: linear-gradient(to right, rgb(175, 120, 226), rgb(160, 87, 229));
   background-clip: text;
   color: transparent; 
   margin-bottom: 20px;
