@@ -11,18 +11,67 @@ nav {
   z-index: 5;
   position: fixed;
 }
+.mb{
+  display: none;
+ position: sticky;
+ top: 0;
+ z-index: 12;
+}
+.mb-main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  gap: 30px;
+  padding: 7px;
+}
+.mb-logo{
+  display: flex;
+  justify-content: space-around;
+}
+.mb-logo a{
+  text-decoration: none;
+
+}
+.dn2 {
+  border: 1px solid blueviolet;
+  padding: 7px;
+  color: blueviolet;
+  border-radius: 5px;
+}
+.login2 {
+  border: 1px solid black;
+  padding: 7px;
+  color: black;
+  border-radius: 5px;
+}
+
+.dn2:hover {
+    background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
+  color: black;
+}
+.login2:hover {
+    background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
+  color: black;
+}
 .menu-list li a {
   text-decoration: none;
+   color: black;
 
 }
 .menu-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  position: absolute;
+  background-color: white;
+ 
 }
 .menu-btn {
-  display: none;
+  position: relative;
+  background-color: white;
 }
 .main-menu {
   width: 100%;
@@ -230,6 +279,7 @@ swiper-slide img {
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 1s ease;
+  overflow: hidden;
 }
 .card:hover {
   transform: scale(1.1);
@@ -303,6 +353,7 @@ swiper-slide img {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  
 }
 
 .cause-card {
@@ -312,6 +363,7 @@ swiper-slide img {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .cause-card img {
@@ -760,3 +812,31 @@ swiper-slide img {
   color: blueviolet;
 }
 
+@media(max-width:600px){
+  nav{
+    display: none;
+  }
+  .mb{
+    display: block;
+   
+  }
+
+  .cards{
+    flex-direction: column;
+  }
+  .header{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cause-container{
+    flex-direction: column;
+  }
+  .cause-card{
+    width: 100%;
+    overflow: hidden;
+  }
+  .about-container{
+    flex-direction: column;
+  }
+
+}
