@@ -6,11 +6,11 @@
   line-height: 27px;
 }
 nav {
+  width: 100%;
   padding: 15px;
   background-color: white;
   z-index: 5;
   position: fixed;
-  margin-bottom: 70px;
 }
 .mb{
   display: none;
@@ -36,9 +36,9 @@ nav {
 
 }
 .dn2 {
-  border: 1px solid blueviolet;
+    border: 1px solid #F27868;
   padding: 7px;
-  color: blueviolet;
+  color: #F27868;
   border-radius: 5px;
 }
 .login2 {
@@ -88,18 +88,18 @@ nav {
   width: 10%;
 }
 .menu-child {
-  width: 80%;
+  width: 85%;
   display: flex;
   gap: 15px;
   justify-content: space-evenly;
 }
 .menu-list2 {
-  /* width: 80%; */
+  width: 70%;
   /* background-color: aqua; */
   display: flex;
   gap: 60px;
   align-items: center;
-  justify-content: center;
+  justify-content:space-evenly;
 }
 .menu-list2 li {
   list-style: none;
@@ -116,9 +116,9 @@ nav {
   font-weight: 600;
 }
 .dn {
-  border: 1px solid blueviolet;
+  border: 1px solid #F27868;
   padding: 7px;
-  color: blueviolet;
+  color: #F27868;
   border-radius: 5px;
 }
 .login {
@@ -188,7 +188,7 @@ nav {
 .text-card h2 {
   font-size: 22px;
   font-weight: bold;
-   background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
+  background: linear-gradient(to right, #f27868, #df3721);
   background-clip: text;
   color: transparent;
   margin: 15px 0;
@@ -284,7 +284,7 @@ form input {
   padding: 15px;
   border: none;
   border-radius: 5px;
-  background: linear-gradient(to right, rgb(207, 100, 236), rgb(138, 7, 195));
+  background: linear-gradient(to right, #f27868, #df3721);
   color: gainsboro;
   font-size: 14px;
   font-weight: bold;
@@ -450,7 +450,7 @@ details p {
 .team-member .role {
     font-size: 14px;
     font-weight: 500;
-    background: linear-gradient(to right, rgb(175, 120, 226), rgb(160, 87, 229));
+  background: linear-gradient(to right, #f27868, #df3721);
   background-clip: text;
   color: transparent; 
 }
@@ -565,7 +565,7 @@ details p {
 .btn2 {
     padding: 15px 30px;
     font-size: 1em;
-  background: linear-gradient(to right, rgb(207, 100, 236), rgb(138, 7, 195));
+  background: linear-gradient(to right, #f27868, #df3721);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -604,7 +604,7 @@ details p {
 
 .footer-title {
   font-size: 1.4rem;
-   background: linear-gradient(to right, rgb(175, 120, 226), rgb(160, 87, 229));
+  background: linear-gradient(to right, #f27868, #df3721);
   background-clip: text;
   color: transparent; 
   margin-bottom: 20px;
