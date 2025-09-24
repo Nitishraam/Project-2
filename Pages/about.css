@@ -454,3 +454,70 @@ details p {
   background-clip: text;
   color: transparent; 
 }
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  /* background: #fff; */
+  box-shadow: 0 0 5px 5px ghostwhite;
+  margin-top: 60px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slide h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.blue {
+  color: blue;
+}
+.green {
+  color: seagreen;
+}
+.red {
+  color: red;
+}
+.yellow {
+  color: goldenrod;
+}
+.purple {
+  color: purple;
+}
+.orange {
+  color: orange;
+}
+.teal {
+  color: teal;
+}
+.pink {
+  color: deeppink;
+}
+.brown {
+  color: brown;
+}
+.gray {
+  color: gray;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
