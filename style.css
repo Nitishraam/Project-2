@@ -6,6 +6,7 @@
   line-height: 27px;
 }
 nav {
+  width: 100%;
   padding: 15px;
   background-color: white;
   z-index: 5;
@@ -87,18 +88,18 @@ nav {
   width: 10%;
 }
 .menu-child {
-  width: 80%;
+  width: 85%;
   display: flex;
   gap: 15px;
   justify-content: space-evenly;
 }
 .menu-list2 {
-  /* width: 80%; */
+  width: 70%;
   /* background-color: aqua; */
   display: flex;
   gap: 60px;
   align-items: center;
-  justify-content: center;
+  justify-content:space-evenly;
 }
 .menu-list2 li {
   list-style: none;
@@ -266,6 +267,7 @@ swiper-slide img {
 .cards {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   padding: 30px;
 }
@@ -351,7 +353,7 @@ swiper-slide img {
 .cause-container {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   
 }
 
@@ -811,7 +813,7 @@ swiper-slide img {
   color: blueviolet;
 }
 
-@media(max-width:600px){
+@media(max-width:768px){
   nav{
     display: none;
   }
@@ -837,5 +839,27 @@ swiper-slide img {
   .about-container{
     flex-direction: column;
   }
+  .intro{
+    width: 95%;
+  }
+  .office-worldwide .map-container{
+    width: 75%;
+  }
 
+}
+@media(max-width:1130px){
+    .menu-list2{
+    gap: 40px;
+  }
+}
+@media(max-width:1000px){
+    .menu-list2{
+    gap: 10px;
+    width: 60%;
+  }
+}
+@media(max-width:1000px){
+  .mb-main{
+    gap: 2px;
+  }
 }
