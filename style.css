@@ -391,6 +391,13 @@ swiper-slide img {
 .dn3 {
   text-decoration: none;
   color: #f27868;
+  border: 1px solid #f27868;
+  padding: 5px;
+  border-radius: 5px;
+}
+.dn3:hover{
+  background-color: #f27868;
+  color: white;
 }
 .img1:hover .cause-dn {
   transform: translateY(0);
