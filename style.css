@@ -87,7 +87,7 @@ nav {
   width: 10%;
 }
 .menu-child {
-  width: 85%;
+  width: 100%;
   display: flex;
   gap: 15px;
   justify-content: space-evenly;
