@@ -100,7 +100,7 @@ nav {
   width: 70%;
   /* background-color: aqua; */
   display: flex;
-  gap: 60px;
+  gap: 20px;
   align-items: center;
   justify-content:space-evenly;
 }
