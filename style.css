@@ -11,12 +11,14 @@ nav {
   background-color: white;
   z-index: 5;
   position: fixed;
+  text-transform: uppercase;
 }
 .mb{
   display: none;
  position: sticky;
  top: 0;
  z-index: 12;
+ text-transform: uppercase;
 }
 .mb-main{
   width: 100%;
@@ -397,7 +399,7 @@ swiper-slide img {
 }
 
 .bar {
-  background: blueviolet;
+  background: #F27868;
   height: 100%;
   border-radius: 4px;
 }
@@ -562,6 +564,7 @@ swiper-slide img {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
+  
 }
 
 .section-title {
@@ -571,6 +574,10 @@ swiper-slide img {
   margin-bottom: 30px;
   position: relative;
   margin-top: 70px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
+  background-clip: text;
+  color: transparent;
 }
 
 
