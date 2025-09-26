@@ -256,7 +256,7 @@ nav {
   color: #f27868;
   font-family: Roboto Slab;
 
-}
+} 
 
 .feature p {
   font-size: 15px;
@@ -327,12 +327,16 @@ form input {
   font-size: 22px;
   font-weight: bold;
   color: #333;
+  font-family: Roboto Slab;
+
 }
 
 .faq-section h2 span {
   background: linear-gradient(to right, rgb(175, 120, 226), rgb(160, 87, 229));
   background-clip: text;
   color: transparent; 
+    font-family: Roboto Slab;
+
 }
 
 
@@ -405,12 +409,16 @@ details p {
   font-size: 36px;
   margin: 5px 0;
   font-weight: bold;
+    font-family: Roboto Slab;
+
 }
 
 .stat-box p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
+  font-family: Roboto Slab;
+
 }
 
 .team-section {
@@ -421,6 +429,11 @@ details p {
 .team-section h1 {
     font-size: 2.5em;
     margin-bottom: 40px;
+    font-family: Roboto Slab;
+
+}
+.team-section span{
+    font-family: Roboto Slab;
 }
 
 .highlight {
@@ -428,6 +441,8 @@ details p {
   background-clip: text;
   color: transparent; 
     font-weight: bold;
+    font-family: Roboto Slab;
+
 }
 
 .team-grid {
@@ -462,14 +477,18 @@ details p {
     font-size: 1.1em;
     font-weight: bold;
     margin: 5px 0;
+    font-family: Roboto Slab;
+
 }
 
 .team-member .role {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
   background: linear-gradient(to right, #f27868, #df3721);
   background-clip: text;
   color: transparent; 
+  font-family: Roboto Slab;
+
 }
 
 .slider {
@@ -497,6 +516,12 @@ details p {
 .slide h3 {
   font-weight: bold;
   font-size: 18px;
+      font-family: Roboto Slab;
+
+}
+.slide p{
+      font-family: Roboto Slab;
+
 }
 
 .blue {
@@ -549,12 +574,16 @@ details p {
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 40px;
+    font-family: Roboto Slab;
+
 }
 
 .newsletter-section .highlight {
   background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
   background-clip: text;
   color: transparent;
+      font-family: Roboto Slab;
+
 }
 .subtext {
     color: #888;
@@ -625,10 +654,14 @@ details p {
   background-clip: text;
   color: transparent; 
   margin-bottom: 20px;
+      font-family: Roboto Slab;
+
 }
 
 .footer-section.about2 p {
   line-height: 27px;
+      font-family: Roboto Slab;
+
 }
 
 .footer-section.about2 .read-more {
@@ -652,6 +685,8 @@ details p {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s;
+      font-family: Roboto Slab;
+
 }
 
 .footer-section.links ul li a:hover {
@@ -687,6 +722,8 @@ details p {
 
 .footer-bottom p {
   color: #888;
+      font-family: Roboto Slab;
+
 }
 
 .social-icons a {
