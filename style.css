@@ -203,12 +203,16 @@ swiper-slide img {
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
+  font-family: Roboto Slab;
+
 }
 
 .hero-content p {
   font-size: 1.1rem;
   margin-bottom: 30px;
   color: #ddd;
+  font-family: Roboto Slab;
+
 }
 
 .buttons {
@@ -258,12 +262,16 @@ swiper-slide img {
 .intro h2 {
   font-size: 28px;
   font-weight: bold;
+  font-family: Roboto Slab;
+
 }
 
 .intro h2 span {
   background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
   background-clip: text;
   color: transparent;
+    font-family: Roboto Slab;
+
 }
 
 .cards {
@@ -294,6 +302,7 @@ swiper-slide img {
 .card h3 {
   font-size: 18px;
   margin: 10px 0 5px;
+  
 }
 
 .card .tagline {
@@ -322,10 +331,14 @@ swiper-slide img {
 .header h2 {
   font-size: 28px;
   font-weight: bold;
+  font-family: Roboto Slab;
+
 }
 
 .header h2 span {
   color: #000;
+    font-family: Roboto Slab;
+
 }
 
 .header h2 {
@@ -470,6 +483,8 @@ swiper-slide img {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 5px;
+  font-family: Roboto Slab;
+
 }
 
 .about h2 span {
@@ -597,6 +612,8 @@ swiper-slide img {
   font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
+  font-family: Roboto Slab;
+  
 }
 
 .section-title {
@@ -610,6 +627,8 @@ swiper-slide img {
   background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
   background-clip: text;
   color: transparent;
+  font-family: Roboto Slab;
+
 }
 
 .news-container {
@@ -700,11 +719,19 @@ swiper-slide img {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+
+
 }
 
 .slide h3 {
   font-weight: bold;
   font-size: 18px;
+    font-family: Roboto Slab;
+
+}
+.slide p{
+    font-family: Roboto Slab;
+
 }
 
 .blue {
@@ -775,10 +802,14 @@ swiper-slide img {
   background-clip: text;
   color: transparent;
   margin-bottom: 20px;
+  font-family: Roboto Slab;
+
 }
 
 .footer-section.about2 p {
-  line-height: 27px;
+  line-height: 30px;
+  font-family: Roboto Slab;
+
 }
 
 .footer-section.about2 .read-more {
@@ -802,6 +833,8 @@ swiper-slide img {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s;
+  font-family: Roboto Slab;
+
 }
 
 .footer-section.links ul li a:hover {
