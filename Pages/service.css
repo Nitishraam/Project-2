@@ -13,35 +13,39 @@ nav {
   position: fixed;
   text-transform: uppercase;
 }
-.mb{
+.mb {
   display: none;
- position: sticky;
- top: 0;
- z-index: 12;
- text-transform: uppercase;
-
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  text-transform: uppercase;
 }
-.mb-main{
+.mb-main {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   position: fixed;
   background-color: white;
   gap: 30px;
   padding: 7px;
 }
-.mb-logo{
+.mb-logo {
   display: flex;
   justify-content: space-around;
+  gap: 5px;
 }
-.mb-logo a{
+.mb-logo img{
+  height: 40px;
+}
+.mb-logo a {
   text-decoration: none;
-
+  display: flex;
 }
 .dn2 {
-    border: 1px solid #F27868;
+  border: 1px solid #f27868;
   padding: 7px;
-  color: #F27868;
+  color: #f27868;
   border-radius: 5px;
 }
 .login2 {
@@ -52,17 +56,16 @@ nav {
 }
 
 .dn2:hover {
-    background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
+  background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
   color: black;
 }
 .login2:hover {
-    background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
+  background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
   color: black;
 }
 .menu-list li a {
   text-decoration: none;
-   color: black;
-
+  color: black;
 }
 .menu-list {
   list-style: none;
@@ -71,7 +74,6 @@ nav {
   gap: 15px;
   position: absolute;
   background-color: white;
- 
 }
 .menu-btn {
   position: relative;
@@ -87,8 +89,10 @@ nav {
   gap: 15px;
   justify-content: space-evenly;
 }
-.main-menu img {
-  width: 10%;
+
+.main-menu img  {
+  width: 100%;
+  height: 40px;
 }
 .menu-child {
   width: 100%;
@@ -102,7 +106,7 @@ nav {
   display: flex;
   gap: 20px;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 .menu-list2 li {
   list-style: none;
@@ -122,9 +126,9 @@ nav {
   font-weight: 600;
 }
 .dn {
-  border: 1px solid #F27868;
+  border: 1px solid #f27868;
   padding: 7px;
-  color: #F27868;
+  color: #f27868;
   border-radius: 5px;
 }
 .login {
@@ -135,37 +139,58 @@ nav {
 }
 
 .dn:hover {
-    background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
+  background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
   color: black;
 }
 .login:hover {
-    background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
+  background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
   color: black;
 }
-.overlay{
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    color: white;
-}
-.overlay h1 {
-  font-size: 42px;
-  font-weight: bold;
-  margin-bottom: 20px;
-    font-family: Roboto Slab;
 
-}
 
-.overlay .breadcrumb {
-  font-size: 16px;
-  opacity: 0.9;
-    font-family: Roboto Slab;
 
-}
-.breadcrumb span{
-    font-family: Roboto Slab;
 
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+
+  .office-worldwide .map-container {
+    width: 75%;
+  }
 }
-.overlay .breadcrumb .home-icon {
-  margin-right: 5px;
+@media (max-width: 1130px) {
+  .menu-list2 {
+    gap: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .menu-list2 {
+    gap: 10px;
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .mb-main {
+    gap: 2px;
+  }
+}
+@media (max-width: 450px) {
+.mb-logo img{
+  height: 30px;
+}
 }

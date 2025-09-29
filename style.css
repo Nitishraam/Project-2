@@ -35,6 +35,9 @@ nav {
   justify-content: space-around;
   gap: 5px;
 }
+.mb-logo img {
+  height: 40px;
+}
 .mb-logo a {
   text-decoration: none;
   display: flex;
@@ -87,7 +90,7 @@ nav {
   justify-content: space-evenly;
 }
 
-.main-menu img  {
+.main-menu img {
   width: 100%;
   height: 40px;
 }
@@ -114,7 +117,7 @@ nav {
   font-weight: 600;
   font-size: 14px;
 }
-.menu-list2 a:hover{
+.menu-list2 a:hover {
   color: #f27868;
 }
 .main-menu a {
@@ -209,7 +212,6 @@ swiper-slide img {
   margin-bottom: 20px;
   line-height: 1.2;
   font-family: Roboto Slab;
-
 }
 
 .hero-content p {
@@ -217,7 +219,6 @@ swiper-slide img {
   margin-bottom: 30px;
   color: #ddd;
   font-family: Roboto Slab;
-
 }
 
 .buttons {
@@ -268,15 +269,13 @@ swiper-slide img {
   font-size: 28px;
   font-weight: bold;
   font-family: Roboto Slab;
-
 }
 
 .intro h2 span {
   background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
   background-clip: text;
   color: transparent;
-    font-family: Roboto Slab;
-
+  font-family: Roboto Slab;
 }
 
 .cards {
@@ -307,7 +306,6 @@ swiper-slide img {
 .card h3 {
   font-size: 18px;
   margin: 10px 0 5px;
-  
 }
 
 .card .tagline {
@@ -337,13 +335,11 @@ swiper-slide img {
   font-size: 28px;
   font-weight: bold;
   font-family: Roboto Slab;
-
 }
 
 .header h2 span {
   color: #000;
-    font-family: Roboto Slab;
-
+  font-family: Roboto Slab;
 }
 
 .header h2 {
@@ -416,13 +412,12 @@ swiper-slide img {
   padding: 5px;
   border-radius: 5px;
 }
-.dn3:hover{
+.dn3:hover {
   background-color: #f27868;
   color: white;
 }
 .img1:hover .cause-dn {
   transform: translateY(0);
-  
 }
 .cause-content {
   padding: 20px;
@@ -489,7 +484,6 @@ swiper-slide img {
   font-weight: bold;
   margin-bottom: 5px;
   font-family: Roboto Slab;
-
 }
 
 .about h2 span {
@@ -618,7 +612,6 @@ swiper-slide img {
   font-weight: bold;
   letter-spacing: 1px;
   font-family: Roboto Slab;
-  
 }
 
 .section-title {
@@ -633,7 +626,6 @@ swiper-slide img {
   background-clip: text;
   color: transparent;
   font-family: Roboto Slab;
-
 }
 
 .news-container {
@@ -724,19 +716,15 @@ swiper-slide img {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-
-
 }
 
 .slide h3 {
   font-weight: bold;
   font-size: 18px;
-    font-family: Roboto Slab;
-
+  font-family: Roboto Slab;
 }
-.slide p{
-    font-family: Roboto Slab;
-
+.slide p {
+  font-family: Roboto Slab;
 }
 
 .blue {
@@ -808,13 +796,11 @@ swiper-slide img {
   color: transparent;
   margin-bottom: 20px;
   font-family: Roboto Slab;
-
 }
 
 .footer-section.about2 p {
   line-height: 30px;
   font-family: Roboto Slab;
-
 }
 
 .footer-section.about2 .read-more {
@@ -839,7 +825,6 @@ swiper-slide img {
   text-decoration: none;
   transition: color 0.3s;
   font-family: Roboto Slab;
-
 }
 
 .footer-section.links ul li a:hover {
@@ -931,5 +916,11 @@ swiper-slide img {
 @media (max-width: 1000px) {
   .mb-main {
     gap: 2px;
+  }
+}
+
+@media (max-width: 450px) {
+  .mb-logo img {
+    height: 30px;
   }
 }
