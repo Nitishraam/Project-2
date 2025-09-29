@@ -146,9 +146,45 @@ nav {
   background: linear-gradient(to right, rgb(217, 195, 245), rgb(196, 108, 244));
   color: black;
 }
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+}
+.top-about {
+  width: 100%;
+  position: relative;
+  padding-top: 80px;
+}
 
+.top-img {
+  width: 100%;
+  height: 500px;
+  color: white;
+ 
+  /* object-fit: contain; */
+}
+.overlay h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Roboto Slab;
+  color: white;
+}
+.overlay .breadcrumb {
+  font-size: 16px;
+  opacity: 0.9;
+  font-family: Roboto Slab;
 
+  color: white;
+}
 
+.breadcrumb span {
+  font-family: Roboto Slab;
+}
+.overlay .breadcrumb .home-icon {
+  margin-right: 5px;
+}
 
 
 

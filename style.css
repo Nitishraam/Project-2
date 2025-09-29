@@ -298,11 +298,25 @@ swiper-slide img {
   overflow: hidden;
 }
 
-.card img {
+.card-img {
   width: 100%;
   border-radius: 5px;
-}
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
 
+}
+.card:hover .card-img{
+        animation: flip2 0.6s linear 1;
+
+}
+   @keyframes flip2 {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
 .card h3 {
   font-size: 18px;
   margin: 10px 0 5px;
@@ -642,12 +656,26 @@ swiper-slide img {
   overflow: hidden;
   transition: transform 0.3s ease;
   background-color: #fff;
-}
 
+}
+.news-img{
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+}
 .news-card:hover {
   transform: translateY(-5px);
 }
-
+.news-card:hover .news-img{
+   animation: flip 0.6s linear 1;
+}
+ @keyframes flip {
+      0% {
+        transform: scale(0)
+      }
+      100% {
+        transform: scale(1.1);
+      }
+    }
 .news-image {
   position: relative;
   width: 100%;
