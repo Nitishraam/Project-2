@@ -216,6 +216,8 @@ nav {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   min-height: 250px;
+  background: linear-gradient(to right, #ede9e9, #ecaba3);
+  
 }
 
 .service-box:hover {
@@ -262,6 +264,7 @@ nav {
   color: #fff;
   opacity: 0;
   transition: opacity 0.4s ease;
+
 }
 
 .service-box:hover .overlay {
@@ -274,6 +277,9 @@ nav {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
+  background: linear-gradient(to right, #f27868, #df3721);
+  background-clip: text;
+  color: transparent;
 }
 
 .service-box .overlay p {
@@ -301,6 +307,7 @@ nav {
   display: flex;
   gap: 20px;
   padding: 20px;
+ 
 }
 
 
@@ -350,11 +357,13 @@ nav {
   text-align: center;
   border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: white;
+   overflow: hidden;
 }
 
 .card img {
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 115px;
   object-fit: cover;
   margin-bottom: 15px;
   border-radius: 6px;
@@ -363,6 +372,9 @@ nav {
 .card h2 {
   margin-bottom: 10px;
   font-size: 18px;
+    background: linear-gradient(to right, #f27868, #df3721);
+  background-clip: text;
+  color: transparent;
 }
 
 .card p {
@@ -532,12 +544,14 @@ nav {
     font-size: 20px;
     margin: 18px 0 10px 0;
     font-weight: 500;
-    color: #222;
+     background: linear-gradient(to right, #f27868, #df3721);
+  background-clip: text;
+  color: transparent;
 }
 
 .feature-card p {
     font-size: 16px;
-    color: #5a5a5a;
+    color: #d9d4d4;
     line-height: 1.45;
     margin: 0 auto;
     max-width: 300px;
@@ -624,6 +638,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .contact-form {
     background: #fff;
@@ -635,6 +650,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 18px;
+      background: linear-gradient(to right, #ede9e9, #ecaba3);
 }
 .contact-form h3 {
     margin-top: 0;
@@ -799,4 +815,46 @@ nav {
 
 .social-icons a:hover {
   color: blueviolet;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .mb {
+    display: block;
+  }
+
+  .office-worldwide .map-container {
+    width: 75%;
+  }
+}
+@media (max-width: 1130px) {
+  .menu-list2 {
+    gap: 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .menu-list2 {
+    gap: 10px;
+    width: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .mb-main {
+    gap: 2px;
+  }
+}
+@media (max-width: 450px) {
+  .mb-logo img {
+    height: 30px;
+  }
+  .contact-hero{
+    flex-direction: column;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container2{
+    flex-direction: column;
+  }
 }
