@@ -848,13 +848,20 @@ nav {
   .mb-logo img {
     height: 30px;
   }
+  .mb-logo a{
+    align-items: center;
+  }
   .contact-hero{
     flex-direction: column;
+    gap: 10px;
   }
   .container{
     flex-direction: column;
   }
   .container2{
     flex-direction: column;
+  }
+  .contact-form{
+    min-width: 350px;
   }
 }
