@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 27px;
+}
+body{
+      background: linear-gradient(to right, #d41111, #e36b5b);
+
+}
+.container {
+    width: 70%;
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+
+}
+
+.donation-form {
+  flex: 2;
+  /* background: #fff; */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.notice {
+  background: #fff3cd;
+  padding: 10px 15px;
+  border-left: 4px solid #ffc107;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.amount-section {
+  margin-bottom: 25px;
+}
+.amount-section h4{
+    color: #f27868;
+}
+.amount-input {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.dollar-sign {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.amount-input input {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  width: 100%;
+}
+
+.amount-options button {
+  padding: 8px 18px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.amount-options .active {
+  background: #2b6e63;
+  color: #fff;
+  border-color: #2b6e63;
+}
+
+.payment-methods h3,
+.personal-info h3 {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  background: linear-gradient(to right, #f27868, #df3721);
+  background-clip: text;
+  color: transparent;
+}
+
+.payment-methods label {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+  color: white  ;
+}
+
+.personal-info input,
+.personal-info textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.personal-info textarea {
+  height: 100px;
+  resize: none;
+}
+
+.donate-btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+ background: linear-gradient(to right, #f27868, #df3721);
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.donate-btn:hover {
+    border: 1px solid blueviolet;
+  background: white;
+  color: blueviolet;
+  font-style: normal;
+}
+.fa-circle-xmark{
+    position: absolute;
+    top: 5%;
+    left: 95%;
+}
+.close{
+    color: red;
+    font-size: 26px;
+
+}
