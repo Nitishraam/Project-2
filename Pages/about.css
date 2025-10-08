@@ -180,6 +180,8 @@ nav {
 
 .breadcrumb span {
   font-family: Roboto Slab;
+    font-size: 20px;
+
 }
 .overlay .breadcrumb .home-icon {
   margin-right: 5px;
@@ -747,6 +749,10 @@ details p {
   }
   .mb {
     display: block;
+  }
+    .menu-list{
+    left: -21px;
+    padding: 10px;
   }
 
   .office-worldwide .map-container {

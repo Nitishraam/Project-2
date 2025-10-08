@@ -161,7 +161,8 @@ nav {
   width: 100%;
   height: 500px;
   color: white;
- 
+   filter: brightness(50%);
+
   /* object-fit: contain; */
 }
 .overlay h1 {
@@ -181,6 +182,7 @@ nav {
 
 .breadcrumb span {
   font-family: Roboto Slab;
+  font-size: 20px;
 }
 .overlay .breadcrumb .home-icon {
   margin-right: 5px;
@@ -505,6 +507,7 @@ nav {
   background: linear-gradient(to right, #f27868, #df3721);
   border: 1px solid #f27868;
   color: gainsboro;
+  text-align: center;
 }
 .contact-btn:hover {
   background: white;
@@ -826,6 +829,10 @@ nav {
 
   .office-worldwide .map-container {
     width: 75%;
+  }
+    .menu-list{
+    left: -21px;
+    padding: 10px;
   }
 }
 @media (max-width: 1130px) {
