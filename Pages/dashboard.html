@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stackly</title>
-    <link rel="stylesheet" href="./contact.css">
-     <link
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
       integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
@@ -26,12 +26,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-</head>
-<body>
-          <div class="mb">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="mb">
       <div class="mb-main">
         <div class="menu-btn">
           <svg
@@ -63,11 +65,13 @@
                   <a href="./Pages/error.html">Home2</a>
                 </div>
               </li>
-              <li><a  href="./about.html">About</a></li>
+              <li><a href="./about.html">About</a></li>
               <li><a href="./service.html">Service</a></li>
               <li><a href="./blog.html">Blogs</a></li>
-              <li><a style="color: #f27868"  href="./contact.html">Contact</a></li>
-              <li><a href="./dashboard.html">Dashboard</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li>
+                <a style="color: #f27868" href="./dashboard.html">Dashboard</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -91,7 +95,7 @@
           <ul class="menu-list2">
             <div style="position: relative">
               <li>
-                <a  href="../index.html">Home</a
+                <a href="../index.html">Home</a
                 ><i
                   onclick="menu3.hidden^=1"
                   class="fa-solid fa-caret-down"
@@ -115,9 +119,11 @@
             </div>
             <li><a href="./about.html">About</a></li>
             <li><a href="./service.html">Service</a></li>
-            <li><a  href="./blog.html">Blogs</a></li>
-            <li><a style="color: #f27868" href="./contact.html">Contact</a></li>
-            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a style="color: #f27868" href="./dashboard.html">Dashboard</a>
+            </li>
           </ul>
           <a class="dn" href="./donate.html">💰Donate Now</a>
           <a class="login" href="./error.html"
@@ -126,68 +132,75 @@
         </div>
       </div>
     </nav>
-      <div class="top-about">
-      <img
-        class="top-img"
-        src="https://weeswp.payo-themes.com/wp-content/uploads/2020/06/banner1a.jpg"
-        alt=""
-      />
 
-      <div data-aos="zoom-in" class="overlay">
-        <h1>CONTACT</h1>
-        <p class="breadcrumb">
-          <span class="home-icon">🏠Home / <span>Service</span></span> 
-        </p>
+    <div class="dashboard">
+      <header>
+        <h1 data-aos="zoom-in">Dashboard</h1>
+      </header>
+
+      <section class="cards">
+        <div data-aos="zoom-in" class="card">
+          512<br /><span>Total Donations</span>
+        </div>
+        <div data-aos="zoom-in" class="card">
+          1,76,097<br /><span>Total Users</span>
+        </div>
+        <div data-aos="zoom-in" class="card">
+          620<br /><span>Active Projects</span>
+        </div>
+        <div data-aos="zoom-in" class="card">
+          1,892<br /><span>Total Transactions</span>
+        </div>
+      </section>
+
+      <section class="main-content">
+        <div class="left">
+          <div class="chart-box1">
+            <h3>Total Users</h3>
+            <canvas id="usersChart"></canvas>
+          </div>
+
+       
+        </div>
+
+        <div class="right">
+          <div data-aos="zoom-in" class="activity-feed">
+            <h3>Activity Feed</h3>
+            <ul>
+              <li>💰 John Doe has made a donation - 10 min ago</li>
+              <li>📁 Stella added a new project - 59 min ago</li>
+              <li>🚩 Esteban flagged a project - 59 min ago</li>
+              <li>💰 John Doe has made a donation - 59 min ago</li>
+            </ul>
+          </div>
+
+          <div data-aos="zoom-in" class="system-alerts">
+            <h3>System Alerts</h3>
+            <ul>
+              <li>🚩 Esteban flagged a project - 10 min ago</li>
+              <li>💰 John Doe has made a pending donation - 20 min ago</li>
+              <li>💰 John Doe has made a pending donation - 30 min ago</li>
+              <li>🚩 Esteban flagged a project - 59 min ago</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="two">
+           <div class="bottom-charts">
+            <div class="chart-box2">
+              <h3>Total Donations</h3>
+              <canvas id="donationsChart"></canvas>
+            </div>
+
+            <div class="chart-box3">
+              <h3>Traffic by Location</h3>
+              <canvas id="trafficChart"></canvas>
+            </div>
+          </div>      
       </div>
     </div>
 
-     <section class="banner">
-        <div  data-aos="zoom-in" class="map-area">
-            <img src="https://weeswp.payo-themes.com/wp-content/uploads/2020/04/mpap.png" alt="World Map" class="world-map">
-        </div>
-        <div  data-aos="zoom-in" class="contact-info">
-            <h3  data-aos="fade-up">Contact Information</h3>
-            <p data-aos="fade-up"><strong>Phone</strong><br>+91 78021 67123</p>
-            <p data-aos="fade-up"><strong>Email</strong><br>stackly1@gmail.com</p>
-            <p data-aos="fade-up"><strong>Head Offie</strong><br>Chinna thirupathi<br>Salem 554022<br>Tamil nadu.</p>
-        </div>
-    </section>
-
-    <section class="contact-form-section">
-        <div  data-aos="zoom-in" class="map-box">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-              width="250"
-              height="150"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            >
-            </iframe>        </div>
-        <div  data-aos="zoom-in" class="form-box">
-            <h3 data-aos="fade-up">Get in Touch with Us</h3>
-            <form method="get" action="./error.html">
-                <input data-aos="fade-up" type="text" placeholder="Your Name" required>
-                <input data-aos="fade-up" type="email" placeholder="Your Email" required>
-                <input data-aos="fade-up" type="text" placeholder="Your Phone"required>
-                <input data-aos="fade-up" type="text" placeholder="Subject"required>
-                <textarea data-aos="fade-up" placeholder="Your Message"required></textarea>
-               <input data-aos="fade-up" class="inp1" type="submit"></input>
-            </form>
-        </div>
-    </section>
-
-    <footer  data-aos="zoom-in" class="footer2">
-        <div class="newsletter">
-            <h3>Subscribe Our Newsletter</h3>
-            <form>
-                <input type="email" placeholder="Your Email">
-                <button type="submit">SUBMIT</button>
-            </form>
-        </div>
-    </footer>
-
-      <footer data-aos="zoom-in" id="footer5" class="site-footer">
+    <footer data-aos="zoom-in" id="footer7" class="site-footer">
       <div class="footer-main">
         <div class="footer-section about2">
           <h2 class="footer-title">STACKLY</h2>
@@ -248,14 +261,9 @@
       </div>
     </footer>
 
-
-
-
-
-
-     <script>
+    <script>
       VANTA.NET({
-        el: "#footer5",
+        el: "#footer7",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
@@ -263,11 +271,96 @@
         minWidth: 200.0,
         scale: 1.0,
         scaleMobile: 1.0,
-        color: 0x7417a7,
       });
     </script>
 
-      <script>
+    <script>
+      const usersCtx = document.getElementById("usersChart").getContext("2d");
+      new Chart(usersCtx, {
+        type: "line",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+          datasets: [
+            {
+              label: "Users",
+              data: [10000, 5000, 12000, 15000, 28000, 20000, 22000],
+              borderColor: "#eb7119",
+              backgroundColor: "rgba(136, 255, 136, 0.1)",
+              tension: 0.4,
+              fill: true,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { beginAtZero: true },
+          },
+        },
+      });
+
+      // Total Donations - Bar Chart
+      const donationsCtx = document
+        .getElementById("donationsChart")
+        .getContext("2d");
+      new Chart(donationsCtx, {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "Other"],
+          datasets: [
+            {
+              label: "Donations",
+              data: [18000, 29000, 23000, 31000, 25000],
+              backgroundColor: [
+                "orange",
+                "orange",
+                "orange",
+                "orange",
+                "orange",
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: { beginAtZero: true },
+          },
+        },
+      });
+
+      // Traffic by Location - Doughnut Chart
+      const trafficCtx = document
+        .getElementById("trafficChart")
+        .getContext("2d");
+      new Chart(trafficCtx, {
+        type: "doughnut",
+        data: {
+          labels: ["United States", "Canada", "Mexico", "Other"],
+          datasets: [
+            {
+              data: [52.1, 22.8, 13.9, 11.2],
+              backgroundColor: ["#f27868", "#e99b91", "#ed6452", "#e33119"],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          cutout: "70%",
+          plugins: {
+            legend: {
+              labels: {
+                color: "#fff",
+              },
+            },
+          },
+        },
+      });
+    </script>
+    <script>
       // $(document).on('ready', function () {
       // initialization of aos
       AOS.init({
@@ -276,6 +369,5 @@
         mirror: true,
       });
     </script>
-
-</body>
+  </body>
 </html>

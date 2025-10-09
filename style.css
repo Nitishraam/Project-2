@@ -5,6 +5,9 @@
   font-family: "Poppins", sans-serif;
   line-height: 27px;
 }
+body{
+  overflow-x: hidden;
+}
 nav {
   width: 100%;
   padding: 15px;
@@ -303,20 +306,18 @@ swiper-slide img {
   border-radius: 5px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
-
 }
-.card:hover .card-img{
-        animation: flip2 0.6s linear 1;
-
+.card:hover .card-img {
+  animation: flip2 0.6s linear 1;
 }
-   @keyframes flip2 {
-      0% {
-        transform: rotateY(0deg);
-      }
-      100% {
-        transform: rotateY(360deg);
-      }
-    }
+@keyframes flip2 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 .card h3 {
   font-size: 18px;
   margin: 10px 0 5px;
@@ -411,7 +412,7 @@ swiper-slide img {
   transform: translateY(-100%);
   transition: transform 0.5s ease-in-out;
 }
-.cause-btn {  
+.cause-btn {
   width: 100%;
   height: 200px;
   display: flex;
@@ -655,26 +656,25 @@ swiper-slide img {
   overflow: hidden;
   transition: transform 0.3s ease;
   background-color: #fff;
-
 }
-.news-img{
-      transform-style: preserve-3d;
-      transition: transform 0.6s;
+.news-img {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
 .news-card:hover {
   transform: translateY(-5px);
 }
-.news-card:hover .news-img{
-   animation: flip 0.6s linear 1;
+.news-card:hover .news-img {
+  animation: flip 0.6s linear 1;
 }
- @keyframes flip {
-      0% {
-        transform: scale(0)
-      }
-      100% {
-        transform: scale(1.1);
-      }
-    }
+@keyframes flip {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 .news-image {
   position: relative;
   width: 100%;
@@ -798,6 +798,7 @@ swiper-slide img {
   color: #ccc;
   padding: 60px 20px;
   margin-top: 70px;
+  overflow: hidden;
 }
 
 .footer-main {
@@ -905,7 +906,7 @@ swiper-slide img {
   .mb {
     display: block;
   }
-    .menu-list{
+  .menu-list {
     left: -21px;
     padding: 10px;
   }

@@ -5,18 +5,17 @@
   font-family: "Poppins", sans-serif;
   line-height: 27px;
 }
-body{
-      background: linear-gradient(to right, #e1b6b6, #f5bcf7);
-
+body {
+  background: linear-gradient(to right, #e1b6b6, #f5bcf7);
 }
 .container {
-    width: 70%;
+  width: 70%;
   display: flex;
   gap: 30px;
   max-width: 1200px;
   margin: auto;
   align-items: center;
-
+  margin-top: 40px;
 }
 
 .donation-form {
@@ -24,7 +23,7 @@ body{
   /* background: #fff; */
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -39,8 +38,8 @@ body{
 .amount-section {
   margin-bottom: 25px;
 }
-.amount-section h4{
-    color: #f27868;
+.amount-section h4 {
+  color: #f27868;
 }
 .amount-input {
   display: flex;
@@ -92,7 +91,7 @@ body{
   display: inline-block;
   margin-right: 20px;
   font-size: 14px;
-  color: white  ;
+  color: white;
 }
 
 .personal-info input,
@@ -116,24 +115,23 @@ body{
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
- background: linear-gradient(to right, #f27868, #df3721);
+  background: linear-gradient(to right, #f27868, #df3721);
   color: gainsboro;
   text-decoration: none;
 }
 
 .donate-btn:hover {
-    border: 1px solid blueviolet;
+  border: 1px solid blueviolet;
   background: white;
   color: blueviolet;
   font-style: normal;
 }
-.fa-circle-xmark{
-    position: absolute;
-    top: 5%;
-    left: 95%;
+.fa-circle-xmark {
+  position: absolute;
+  top: 5%;
+  left: 95%;
 }
-.close{
-    color: red;
-    font-size: 26px;
-
+.close {
+  color: red;
+  font-size: 26px;
 }

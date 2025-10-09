@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stackly</title>
-    <link rel="stylesheet" href="./donate.css">
-     <link
+    <link rel="stylesheet" href="./donate.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-     
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
       integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
@@ -27,24 +27,22 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-</head>
-<body>
-      <div id="form"  class="container">
-      
-    <form method="get" action="./error.html" class="donation-form">
-     <a class="close" href="../index.html"
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  </head>
+  <body>
+    <div data-aos="zoom-in"  id="form" class="container">
+      <form  method="get" action="./error.html" class="donation-form">
+        <a class="close" href="../index.html"
           ><i class="fa-regular fa-circle-xmark"></i
         ></a>
 
-      <div class="amount-section">
-        <h4>Donate</h4>
-        <div class="amount-input">
-           
-          <span class="dollar-sign">$</span>
-          <input type="text" value="100" />
-        </div>
-        <!-- <div class="amount-options">
+        <div class="amount-section">
+          <h4>Donate</h4>
+          <div class="amount-input">
+            <span class="dollar-sign">$</span>
+            <input type="text" value="100" />
+          </div>
+          <!-- <div class="amount-options">
           <button>$20</button>
           <button>$50</button>
           <button class="active">$100</button>
@@ -52,41 +50,50 @@
           <button>$200</button>
           <button>Custom Amount</button>
         </div> -->
-      </div>
+        </div>
 
-      <div class="payment-methods">
-        <h3>Select Payment Method</h3>
-        <label><input type="radio" name="payment" checked /> Test Donation</label>
-        <label><input type="radio" name="payment" /> Offline Donation</label>
-        <label><input type="radio" name="payment" /> Credit Card</label>
-      </div>
+        <div class="payment-methods">
+          <h3>Select Payment Method</h3>
+          <label
+            ><input type="radio" name="payment" checked /> Test Donation</label
+          >
+          <label><input type="radio" name="payment" /> Offline Donation</label>
+          <label><input type="radio" name="payment" /> Credit Card</label>
+        </div>
 
-      <div class="personal-info">
-        <h3>Personal Info</h3>
-        <input type="text" placeholder="Your name" required/>
-        <input type="text" placeholder="Last name" required/>
-        <input type="email" placeholder="Email Address" required/>
-        <textarea placeholder="Type Your Message" required></textarea>
-      </div>
+        <div class="personal-info">
+          <h3>Personal Info</h3>
+          <input type="text" placeholder="Your name" required />
+          <input type="text" placeholder="Last name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="Type Your Message" required></textarea>
+        </div>
 
-      <button type="submit" class="donate-btn">💜 Donate Now</button>
-    </form>
+        <button type="submit" class="donate-btn">💜 Donate Now</button>
+      </form>
+    </div>
 
-  </div>
-
-  <script>
-VANTA.BIRDS({
-  el: "#form",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  backgroundColor: 0x111010
-})
-</script>
-  
-</body>
+    <script>
+      VANTA.BIRDS({
+        el: "#form",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        backgroundColor: 0x111010,
+      });
+    </script>
+      <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+  </body>
 </html>
