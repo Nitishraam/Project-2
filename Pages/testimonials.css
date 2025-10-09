@@ -304,6 +304,112 @@ testimonials-section {
 .newsletter-form button:hover {
     background: #284021;
 }
+
+.site-footer {
+  background: #2c2c2c;
+  color: #ccc;
+  padding: 60px 20px;
+  margin-top: 70px;
+  overflow: hidden;
+}
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title {
+  font-size: 1.4rem;
+  background: linear-gradient(to right, #f27868, #df3721);
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+  font-family: Roboto Slab;
+}
+
+.footer-section.about2 p {
+  line-height: 27px;
+  font-family: Roboto Slab;
+}
+
+.footer-section.about2 .read-more {
+  background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.footer-section.links ul {
+  list-style: none;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-family: Roboto Slab;
+}
+
+.footer-section.links ul li a:hover {
+  color: blueviolet;
+}
+
+.office-worldwide .map-container {
+  width: 100%;
+  height: auto;
+}
+
+.office-worldwide .map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  margin-top: 40px;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #888;
+  font-family: Roboto Slab;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: blueviolet;
+}
 @media (max-width: 768px) {
   nav {
     display: none;
