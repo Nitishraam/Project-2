@@ -410,6 +410,7 @@ testimonials-section {
 .social-icons a:hover {
   color: blueviolet;
 }
+
 @media (max-width: 768px) {
   nav {
     display: none;
