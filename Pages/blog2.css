@@ -163,6 +163,7 @@ nav {
 .top-img {
   width: 100%;
   height: 500px;
+  filter: brightness(50%);
   color: white;
   /* object-fit: contain; */
 }
@@ -259,11 +260,14 @@ nav {
 
 .date {
   font-size: 14px;
-  background: linear-gradient(to right, #f27868, #df3721);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
 }
-
+.re{
+  text-decoration: none;
+  color: orange;
+}
 .tag {
   position: absolute;
   background: #f4511e;
@@ -300,9 +304,9 @@ nav {
   font-size: 18px;
   border-bottom: 1px solid #eee;
   padding-bottom: 5px;
-  background: linear-gradient(to right, #f27868, #df3721);
-  background-clip: text;
-  color: transparent;
+ background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
 }
 
 .widget ul {
@@ -354,9 +358,9 @@ nav {
   padding-bottom: 5px;
   margin-bottom: 20px;
   color: #000;
-  background: linear-gradient(to right, #f27868, #df3721);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
 }
 
 .comment {
@@ -396,7 +400,7 @@ nav {
   color: #555;
 }
 .comment-form {
-  background: linear-gradient(to right, #ede9e9, #ecaba3);
+  background: linear-gradient(to right, #c799dc, #e4a77e);
   padding: 20px;
 }
 .comment-form label {
@@ -442,8 +446,8 @@ nav {
 }
 
 .inp {
-  background-color: #f15b2a;
-  color: #fff;
+   background: linear-gradient(to right, #fcb776, #a503f0);
+  color: gainsboro;
   padding: 12px 25px;
   border: none;
   border-radius: 4px;
@@ -452,9 +456,9 @@ nav {
 }
 
 .inp:hover {
-  border: 1px solid blueviolet;
+  border: 1px solid orange;
   background: white;
-  color: blueviolet;
+  color: rgb(235, 117, 39);
 }
 .site-footer {
   background: #2c2c2c;

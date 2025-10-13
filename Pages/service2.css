@@ -164,6 +164,7 @@ nav {
   width: 100%;
   height: 500px;
   color: white;
+  filter: brightness(50%);
   /* object-fit: contain; */
 }
 .overlay h1 {
@@ -256,6 +257,7 @@ nav {
   justify-content: center;
   border: 1px solid black;
   color: black;
+  
 }
 
 .campaign .content .date {
@@ -317,6 +319,9 @@ nav {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 40px;
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
 }
 
 .cause-grid {
@@ -334,6 +339,9 @@ nav {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s;
   padding-bottom: 20px;
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
 }
 
 .cause:hover {
@@ -349,8 +357,10 @@ nav {
 .cause h3 {
   font-size: 18px;
   margin: 15px;
-  color: #222;
-}
+ background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
+  }
 
 .cause p {
   font-size: 14px;
@@ -434,9 +444,9 @@ nav {
   line-height: 1.1;
   margin: 10px 0 22px 0;
   font-weight: 700;
-  background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
-  background-clip: text;
-  color: transparent;
+ background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
 }
 .content-wrapper p {
   font-size: 17px;
@@ -455,7 +465,7 @@ nav {
   z-index: 5;
 }
 .phone-box {
-  background: linear-gradient(to right, #f27868, #df3721);
+  background: linear-gradient(to right, #fcb776, #a503f0);
   color: #fff;
   font-size: 18px;
   font-weight: bold;
@@ -491,9 +501,9 @@ nav {
   margin-bottom: 10px;
   font-size: 1.6rem;
   text-align: center;
-  background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
   font-weight: 600;
 }
 .form-desc {
@@ -530,8 +540,8 @@ nav {
 .btn4 {
   margin-top: 8px;
   padding: 16px;
-  background: linear-gradient(to right, #f27868, #df3721);
-  color: #fff;
+  background: linear-gradient(to right, #fcb776, #a503f0);
+  color: gainsboro;
   font-size: 1.17rem;
   font-weight: 600;
   border: none;
@@ -541,8 +551,8 @@ nav {
   transition: background 0.2s;
 }
 .btn4:hover {
-  background: white;
-  color: blueviolet;
+   background: white;
+  color: rgb(235, 117, 39);
   border: 1px solid blueviolet;
 }
 .site-footer {

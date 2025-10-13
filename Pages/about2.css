@@ -233,6 +233,9 @@ nav {
 }
 
 .what-we-do h2 {
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(195, 95, 234));
+    background-clip: text;
+    color: transparent;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
@@ -246,13 +249,17 @@ nav {
 .what-we-do button {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #e74c3c;
-  color: #fff;
+    background: linear-gradient(to right, #fcb776, #a503f0);
+  color: gainsboro;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-
+.what-we-do button:hover{
+    background: white;
+  color: rgb(235, 117, 39);
+  border: 1px solid orange;
+}
 /* Stats Section */
 .stats {
   display: flex;
@@ -282,6 +289,9 @@ nav {
 }
 
 .projects h2 {
+  background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+  background-clip: text;
+  color: transparent;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 40px;
@@ -322,6 +332,9 @@ nav {
 }
 
 .donors h2 {
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 5px;
@@ -363,6 +376,9 @@ nav {
 }
 
 .donor h3 {
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -387,6 +403,9 @@ nav {
 }
 
 .volunteer h2 {
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -401,8 +420,8 @@ nav {
 
 .volunteer button {
   padding: 10px 25px;
-  background: #e74c3c;
-  color: #fff;
+   background: linear-gradient(to right, #fcb776, #a503f0);
+  color: gainsboro;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -411,7 +430,9 @@ nav {
 }
 
 .volunteer button:hover {
-  background: #c0392b;
+  background: white;
+  color: rgb(235, 117, 39);
+  border: 1px solid orange;
 }
 
 .volunteer-img {

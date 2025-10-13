@@ -282,8 +282,8 @@ swiper-slide img {
 }
 
 .btn.primary {
-  background: linear-gradient(to right, #fcb776, #a503f0);
-  color: gainsboro;
+    background: linear-gradient(to right, #fcb776, #a503f0);
+    color: gainsboro;
 }
 
 .btn.primary:hover {

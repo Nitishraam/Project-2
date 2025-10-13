@@ -6,7 +6,7 @@
   line-height: 27px;
 }
 body {
-  background: linear-gradient(to right, #e1b6b6, #f5bcf7);
+    background: linear-gradient(to right, #ef76fc, #e99550);
 }
 .container {
   width: 70%;
@@ -39,7 +39,7 @@ body {
   margin-bottom: 25px;
 }
 .amount-section h4 {
-  color: #f27868;
+  color: rgb(160, 75, 240);
 }
 .amount-input {
   display: flex;
@@ -82,9 +82,8 @@ body {
 .personal-info h3 {
   margin: 20px 0 10px;
   font-size: 18px;
-  background: linear-gradient(to right, #f27868, #df3721);
-  background-clip: text;
-  color: transparent;
+  color: rgb(159, 74, 238);
+ 
 }
 
 .payment-methods label {
@@ -115,15 +114,15 @@ body {
   border-radius: 30px;
   font-size: 16px;
   cursor: pointer;
-  background: linear-gradient(to right, #f27868, #df3721);
-  color: gainsboro;
+   background: linear-gradient(to right, #fcb776, #a503f0);
+    color: gainsboro;
   text-decoration: none;
 }
 
 .donate-btn:hover {
-  border: 1px solid blueviolet;
+  border: 1px solid orange;
   background: white;
-  color: blueviolet;
+  color: rgb(235, 117, 39);
   font-style: normal;
 }
 .fa-circle-xmark {

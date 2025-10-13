@@ -163,9 +163,9 @@ nav {
 
 header h1 {
   margin-bottom: 20px;
-  background: linear-gradient(to right, #f27868, #df3721);
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(to right, rgb(169, 26, 235), rgb(230, 128, 88));
+    background-clip: text;
+    color: transparent;
 }
 
 .cards {
@@ -176,7 +176,7 @@ header h1 {
 }
 
 .card {
-  border: 2px solid blueviolet;
+  border: 2px solid rgb(230, 93, 24);
   padding: 20px;
   border-radius: 10px;
   font-size: 24px;
@@ -212,19 +212,19 @@ header h1 {
 }
 
 .chart-box1 {
-  background: linear-gradient(to right, #f8c7c7, #e59a90);
+  background: linear-gradient(to right, #cf88f0, #f17c58);
   padding: 40px;
   border-radius: 10px;
   height: 500px;
 }
 .chart-box2 {
-  background: linear-gradient(to right, #f8c7c7, #e59a90);
+  background: linear-gradient(to right, #cf88f0, #f17c58);
   padding: 40px;
   border-radius: 10px;
   height: 530px;
 }
 .chart-box3 {
-  background: linear-gradient(to right, #f8c7c7, #e59a90);
+  background: linear-gradient(to right, #cf88f0, #f17c58);
   padding: 20px;
   border-radius: 10px;
   height: 530px;
@@ -254,7 +254,7 @@ canvas {
 
 .activity-feed,
 .system-alerts {
-  border: 2px solid blueviolet;
+  border: 2px solid rgb(230, 93, 24);
   padding: 20px;
   border-radius: 10px;
 }
@@ -272,12 +272,12 @@ canvas {
   color: black;
 }
 .activity-feed h3 {
-  background: linear-gradient(to right, #d74aed, #cc06f4);
+  background: linear-gradient(to right, #eb8541, #cc06f4);
   background-clip: text;
   color: transparent;
 }
 .system-alerts h3 {
-  background: linear-gradient(to right, #d74aed, #cc06f4);
+  background: linear-gradient(to right, #eb8541, #cc06f4);
   background-clip: text;
   color: transparent;
 }
@@ -368,6 +368,7 @@ canvas {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .footer-bottom p {
