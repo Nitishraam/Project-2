@@ -194,132 +194,132 @@ nav {
   text-decoration: none;
 }
 
-.dashboard {
-  max-width: 1300px;
-  margin: auto;
-  padding-top: 100px;
-}
+  .dashboard {
+    max-width: 1300px;
+    margin: auto;
+    padding-top: 100px;
+  }
 
-header h1 {
-  margin-bottom: 20px;
-  background: linear-gradient(to right, #f27868, #df3721);
-  background-clip: text;
-  color: transparent;
-}
+  header h1 {
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #f27868, #df3721);
+    background-clip: text;
+    color: transparent;
+  }
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  margin-bottom: 30px;
-}
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
 
-.card {
-  border: 2px solid blueviolet;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  color: rgb(241, 111, 5);
-}
+  .card {
+    border: 2px solid blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(241, 111, 5);
+  }
 
-.card span {
-  display: block;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 5px;
-  color: black;
-}
+  .card span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: black;
+  }
 
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 
-.left {
-  flex: 2;
-  min-width: 600px;
-}
+  .left {
+    flex: 2;
+    min-width: 600px;
+  }
 
-.right {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+  .right {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-.chart-box1 {
-  background: linear-gradient(to right, #f8c7c7, #e59a90);
-  padding: 40px;
-  border-radius: 10px;
-  height: 500px;
-}
-.chart-box2 {
-  background: linear-gradient(to right, #f8c7c7, #e59a90);
-  padding: 40px;
-  border-radius: 10px;
-  height: 530px;
-}
-.chart-box3 {
-  background: linear-gradient(to right, #f8c7c7, #e59a90);
-  padding: 20px;
-  border-radius: 10px;
-  height: 530px;
-}
+  .chart-box1 {
+    background: linear-gradient(to right, #f8c7c7, #e59a90);
+    padding: 40px;
+    border-radius: 10px;
+    height: 500px;
+  }
+  .chart-box2 {
+    background: linear-gradient(to right, #f8c7c7, #e59a90);
+    padding: 40px;
+    border-radius: 10px;
+    height: 530px;
+  }
+  .chart-box3 {
+    background: linear-gradient(to right, #f8c7c7, #e59a90);
+    padding: 20px;
+    border-radius: 10px;
+    height: 530px;
+  }
 
-.chart-box h3 {
-  background: linear-gradient(to right, #e068f2, #d112f7);
-  background-clip: text;
-  color: transparent;
-}
-.bottom-charts {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 20px;
-  margin-top: 20px;
-}
+  .chart-box h3 {
+    background: linear-gradient(to right, #e068f2, #d112f7);
+    background-clip: text;
+    color: transparent;
+  }
+  .bottom-charts {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    margin-top: 20px;
+  }
 
-.bottom-charts .chart-box {
-  flex: 1;
-  min-width: 250px;
-}
-/* 
-canvas {
-  width: 100% !important;
-  height: 250px !important;
-} */
+  .bottom-charts .chart-box {
+    flex: 1;
+    min-width: 250px;
+  }
+  /* 
+  canvas {
+    width: 100% !important;
+    height: 250px !important;
+  } */
 
-.activity-feed,
-.system-alerts {
-  border: 2px solid blueviolet;
-  padding: 20px;
-  border-radius: 10px;
-}
+  .activity-feed,
+  .system-alerts {
+    border: 2px solid blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+  }
 
-.activity-feed ul,
-.system-alerts ul {
-  list-style: none;
-  padding-left: 0;
-}
+  .activity-feed ul,
+  .system-alerts ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
-.activity-feed li,
-.system-alerts li {
-  margin-bottom: 10px;
-  font-size: 14px;
-  color: black;
-}
-.activity-feed h3 {
-  background: linear-gradient(to right, #d74aed, #cc06f4);
-  background-clip: text;
-  color: transparent;
-}
-.system-alerts h3 {
-  background: linear-gradient(to right, #d74aed, #cc06f4);
-  background-clip: text;
-  color: transparent;
-}
+  .activity-feed li,
+  .system-alerts li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: black;
+  }
+  .activity-feed h3 {
+    background: linear-gradient(to right, #d74aed, #cc06f4);
+    background-clip: text;
+    color: transparent;
+  }
+  .system-alerts h3 {
+    background: linear-gradient(to right, #d74aed, #cc06f4);
+    background-clip: text;
+    color: transparent;
+  }
 
 .site-footer {
   background: #2c2c2c;

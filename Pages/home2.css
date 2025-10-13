@@ -282,13 +282,13 @@ swiper-slide img {
 }
 
 .btn.primary {
-  background: linear-gradient(to right, #f27868, #df3721);
+  background: linear-gradient(to right, #fcb776, #a503f0);
   color: gainsboro;
 }
 
 .btn.primary:hover {
   background: white;
-  color: blueviolet;
+  color: rgb(235, 117, 39);
 }
 
 .btn.secondary {
@@ -312,8 +312,12 @@ swiper-slide img {
 .main-title {
     font-size: 2.8rem;
     font-weight: bold;
-    color: #23211e;
+    
     margin-bottom: 16px;
+     background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+  background-clip: text;
+  color: transparent;
+  padding: 10px;
 }
 
 .subtitle {
@@ -333,7 +337,7 @@ swiper-slide img {
     width: 220px;
     height: 220px;
     border-radius: 50%;
-    background: #f4c36a;
+    background: linear-gradient(to right, #fcb776, #a503f0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,9 +347,9 @@ swiper-slide img {
 }
 
 .info-circle.right {
-    background: #48513a;
+    background: linear-gradient(to right, #fcb776, #a503f0);
     color: #fff;
-    box-shadow: 0 0 0 10px #48513a33;
+    box-shadow: 0 0 0 10px #48513a33 ;
 }
 
 .circle-content {
@@ -419,7 +423,9 @@ swiper-slide img {
 .campaign-subtitle {
     display: block;
     font-size: 1.7rem;
-    color: #e8c16c;
+    background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+  background-clip: text;
+  color: transparent;
     margin-bottom: 18px;
     font-weight: 700;
 }
@@ -436,9 +442,11 @@ swiper-slide img {
 .campaign-link {
     display: inline-block;
     font-size: 1.2rem;
-    color: #e8c16c;
+    background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+    background-clip: text;
+    color: transparent;
     text-decoration: none;
-    border-bottom: 3px solid #e8c16c;
+    border-bottom: 3px solid blueviolet;
     padding-bottom: 0.2em;
     font-weight: 700;
     margin-top: 14px;
@@ -478,8 +486,9 @@ swiper-slide img {
 }
 
 .header {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -496,7 +505,7 @@ swiper-slide img {
 }
 
 .header h2 {
-  background: linear-gradient(to right, rgb(152, 88, 211), blueviolet);
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
   background-clip: text;
   color: transparent;
 }
@@ -607,8 +616,10 @@ swiper-slide img {
   top: -20px;
   right: 0;
   background: #fff;
-  border: 2px solid green;
-  color: green;
+  border: 2px solid orange;
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+  background-clip: text;
+  color: transparent;
   font-size: 12px;
   font-weight: bold;
   padding: 3px 6px;
@@ -655,11 +666,14 @@ home-team-child img {
   position: relative;
 }
 .home-team h5 {
-  color: #2563eb;
+   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+  background-clip: text;
+  color: transparent;
 }
 .home-team-child h6 {
-  color: #2563eb;
-}
+ background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+  background-clip: text;
+  color: transparent;}
 .team-media {
   width: 80%;
   background-color: rgb(11, 170, 224);
