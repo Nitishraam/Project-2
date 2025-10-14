@@ -903,6 +903,10 @@ home-team-child img {
   .mb-logo a {
     align-items: center;
   }
+   .mb-logo a{
+    font-size: 12px;
+  }
+  
   .main-title{
     line-height: 38px;
   }
