@@ -244,18 +244,20 @@ nav {
 .what-we-do p {
   font-size: 14px;
   color: #555;
+  margin-bottom: 10px;
 }
 
-.what-we-do button {
-  margin-top: 20px;
+.what-we-do a {
+  margin-top: 40px;
   padding: 10px 20px;
     background: linear-gradient(to right, #fcb776, #a503f0);
   color: gainsboro;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
-.what-we-do button:hover{
+.what-we-do a:hover{
     background: white;
   color: rgb(235, 117, 39);
   border: 1px solid orange;
@@ -313,6 +315,7 @@ nav {
   border-radius: 10px;
   width: 280px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
 .project img {
@@ -418,7 +421,7 @@ nav {
   font-size: 15px;
 }
 
-.volunteer button {
+.volunteer a {
   padding: 10px 25px;
    background: linear-gradient(to right, #fcb776, #a503f0);
   color: gainsboro;
@@ -427,9 +430,10 @@ nav {
   cursor: pointer;
   font-weight: 600;
   transition: background 0.3s;
+  text-decoration: none;
 }
 
-.volunteer button:hover {
+.volunteer a:hover {
   background: white;
   color: rgb(235, 117, 39);
   border: 1px solid orange;

@@ -256,7 +256,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   border: 1px solid black;
-  color: black;
+  color: white;
   
 }
 
@@ -700,5 +700,10 @@ nav {
   }
   .container {
     flex-direction: column;
+  }
+  .contact-hero{
+    flex-direction: column;
+    min-width: 80vw;
+    gap: 10px;
   }
 }

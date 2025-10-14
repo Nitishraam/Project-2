@@ -425,8 +425,11 @@ canvas {
   .mb-logo a {
     align-items: center;
   }
-  .container {
-    flex-direction: column;
+    .left{
+    min-width: 100%;
   }
+ .bottom-charts{
+  grid-template-columns: auto;
+ }
 }
     

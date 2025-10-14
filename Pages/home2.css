@@ -530,6 +530,7 @@ swiper-slide img {
     display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
+  overflow: hidden;
   /* flex-wrap: wrap; */
 }
 
@@ -617,9 +618,9 @@ swiper-slide img {
   right: 0;
   background: #fff;
   border: 2px solid orange;
-   background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
+   /* background: linear-gradient(to right, rgb(232, 120, 45), rgb(178, 94, 211));
   background-clip: text;
-  color: transparent;
+  color: transparent; */
   font-size: 12px;
   font-weight: bold;
   padding: 3px 6px;
@@ -902,7 +903,13 @@ home-team-child img {
   .mb-logo a {
     align-items: center;
   }
-  .container {
+  .main-title{
+    line-height: 38px;
+  }
+  .info-section{
     flex-direction: column;
+  }
+  .cause-container{
+    grid-template-columns: repeat(1,1fr);
   }
 }
