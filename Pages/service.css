@@ -871,11 +871,20 @@ nav {
   .contact-form {
     min-width: 350px;
   }
-  .contact-hero{
+  .contact-hero-left{
     min-width: 355px;
+
+  }
+  .contact-hero-right{
+    min-width: 350px;
+  }
+  .contact-hero{
     margin-left: 1px;
   }
   .content-wrapper{
     max-width: 355px;
+  }
+  .phone-box{
+    width: 300px;
   }
 }
