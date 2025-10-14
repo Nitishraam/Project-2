@@ -871,4 +871,11 @@ nav {
   .contact-form {
     min-width: 350px;
   }
+  .contact-hero{
+    min-width: 355px;
+    margin-left: 1px;
+  }
+  .content-wrapper{
+    max-width: 355px;
+  }
 }
