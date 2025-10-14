@@ -955,7 +955,8 @@ swiper-slide img {
   .mb-logo img {
     height: 30px;
   }
-  .mb-logo a{
+   .mb-logo a{
+          align-items: center;
     font-size: 12px;
   }
 }

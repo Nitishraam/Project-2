@@ -900,13 +900,11 @@ home-team-child img {
   .mb-logo img {
     height: 30px;
   }
-  .mb-logo a {
-    align-items: center;
-  }
-   .mb-logo a{
+    .mb-logo a{
+          align-items: center;
     font-size: 12px;
   }
-  
+
   .main-title{
     line-height: 38px;
   }

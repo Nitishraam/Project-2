@@ -466,6 +466,9 @@ nav {
   .mb-logo a {
     align-items: center;
   }
+   .mb-logo a{
+    font-size: 12px;
+  }
   .left{
     min-width: 100%;
   }

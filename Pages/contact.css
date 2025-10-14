@@ -491,6 +491,7 @@ nav {
     gap: 15px;
   }
     .mb-logo a{
+          align-items: center;
     font-size: 12px;
   }
 }
