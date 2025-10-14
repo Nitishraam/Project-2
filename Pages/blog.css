@@ -574,4 +574,7 @@ nav {
   .container {
     flex-direction: column;
   }
+    .mb-logo a{
+    font-size: 12px;
+  }
 }

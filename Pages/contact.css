@@ -490,4 +490,7 @@ nav {
     align-items: center;
     gap: 15px;
   }
+    .mb-logo a{
+    font-size: 12px;
+  }
 }
