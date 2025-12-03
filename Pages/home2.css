@@ -915,3 +915,14 @@ home-team-child img {
     grid-template-columns: repeat(1,1fr);
   }
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
