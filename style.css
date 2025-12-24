@@ -276,7 +276,7 @@ nav {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   animation: heroSlideUp 1.2s ease-out;
 }
 
@@ -447,6 +447,9 @@ nav {
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
   border: 1px solid rgba(255,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card::before {
@@ -1025,7 +1028,7 @@ nav {
 
 /* ========== IMPACT STATS SECTION ========== */
 .impact-section {
-  padding: 140px 0;
+  padding: 70px 0;
   background: radial-gradient(ellipse at center, rgba(249,115,22,0.03) 0%, transparent 70%);
   position: relative;
 }
@@ -1299,7 +1302,7 @@ nav {
 /* ========== CLIENTS SLIDER ========== */
 .clients-section {
   background: rgba(255,255,255,0.05);
-  padding: 80px 0;
+  padding: 20px 0;
   position: relative;
 }
 

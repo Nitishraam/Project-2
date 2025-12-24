@@ -331,14 +331,14 @@ main { padding-top: 90px; }
 
 /* STORY SECTION */
 .story-section {
-  padding: 120px 0;
+  padding: 30px 0;
   background: white;
 }
 
 .section-header {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 80px;
+  margin: 0 auto 30px;
 }
 
 .section-header h2 {
@@ -413,7 +413,7 @@ main { padding-top: 90px; }
 
 /* CAMPAIGN */
 .campaign-section {
-  padding: 100px 0;
+  padding: 65px 0;
   background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
 }
 
@@ -502,7 +502,7 @@ main { padding-top: 90px; }
 
 /* ========== URGENT CAUSES - PERFECT 3x3 GRID ========== */
 .causes-section {
-  padding: 120px 0;
+  padding: 40px 0;
   background: white;
 }
 
@@ -620,7 +620,7 @@ main { padding-top: 90px; }
 
 /* ========== PROGRAMS SECTION - 15 ANIMATIONS ========== */
 .programs-section {
-  padding: 140px 0;
+  padding: 40px 0;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
   position: relative;
   overflow: hidden;
@@ -645,7 +645,7 @@ main { padding-top: 90px; }
 .section-header {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 100px;
+  margin: 0 auto 30px;
 }
 
 .section-header h2 {
@@ -794,7 +794,7 @@ main { padding-top: 90px; }
 
 /* ========== CTA SECTION - 10 ANIMATIONS ========== */
 .cta-section {
-  padding: 140px 0;
+  padding: 55px 0;
   position: relative;
   overflow: hidden;
 }
@@ -973,7 +973,7 @@ main { padding-top: 90px; }
 
 /* ========== TEAM - 4 IN ONE ROW ========== */
 .team-section {
-  padding: 120px 0;
+  padding: 25px 0;
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
 
@@ -1058,7 +1058,7 @@ main { padding-top: 90px; }
 
 /* ========== CAMPAIGNS SECTION - PERFECT COLORS (NO ROOT) ========== */
 .campaigns-section {
-  padding: 100px 0;
+  padding: 50px 0;
   background: rgba(254,252,232,0.9) !important;
 }
 
@@ -1211,7 +1211,7 @@ main { padding-top: 90px; }
 
 /* CLIENTS SLIDER */
 .clients-section {
-  padding: 100px 0;
+  padding: 30px 0;
   background: white;
 }
 
@@ -1270,7 +1270,7 @@ main { padding-top: 90px; }
   background: #2c2c2c;
   color: #ccc;
   padding: 60px 20px;
-  margin-top: 70px;
+  margin-top: 40px;
   overflow: hidden;
 }
 .footer-main {
