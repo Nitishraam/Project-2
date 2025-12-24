@@ -1,939 +1,610 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stackly</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
-      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly - Humanity Redefined</title>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-  </head>
-  <body>
-    <div class="mb">
-      <div class="mb-main">
-        <div class="menu-btn">
-          <svg
-            onclick="menu.hidden^=1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="size-6"
-            height="24"
-            width="24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-              clip-rule="evenodd"
-            />
-          </svg>
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-          <div hidden id="menu">
-            <ul class="menu-list">
-              <li>
-                <a style="color: #f27868" href="#"
-                  >Home</a>
-                  <i
-                    onclick="menu2.hidden^=1"
-                    class="fa-solid fa-caret-down"
-                  ></i
-                >
-                <div id="menu2" hidden>
-                  <a href="./Pages/home2.html">Home2</a>
-                </div>
-              </li>
-              <li><a href="./Pages/about.html">About</a></li>
-              <li><a href="./Pages/service.html">Service</a></li>
-              <li><a href="./Pages/blog.html">Blogs</a></li>
-              <li><a href="./Pages/contact.html">Contact</a></li>
-              <li><a href="./Pages/dashboard.html">Dashboard</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="mb-logo">
-          <a href="./index.html" style="display: flex; align-items: center">
-            <img src="./Images/logo.webp" alt="" />
-          </a>
-          <a class="dn2" href="./Pages/donate.html">💰Donate Now</a>
-          <a class="login2" href="./Pages/login.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
-        </div>
-      </div>
-    </div>
-    <nav> 
-      <div class="main-menu">
-        <a href="./index.html" style="display: flex; align-items: center">
-          <img src="./Images/logo.webp" alt="" />
-        </a>
-        <div class="menu-child">
-          <ul class="menu-list2">
-            <div style="position: relative">
-              <li>
-                <a style="color: #f27868" href="#">Home</a
-                ><i
-                  onclick="menu3.hidden^=1"
-                  class="fa-solid fa-caret-down"
-                ></i>
-                <div
-                  style="position: absolute; top: 25px; background-color: white"
-                >
-                  <a
-                    href="./Pages/home2.html"
-                    style="
-                      background-color: white;
-                      border: 1px solid black;
-                      padding: 4px;
-                    "
-                    id="menu3"
-                    hidden
-                    >Home2</a
-                  >
-                </div>
-              </li>
-            </div>
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+</head>
+<body>
+  <!-- Mobile Navbar (original) -->
+  <div class="mb">
+    <div class="mb-main">
+      <div class="menu-btn">
+        <svg onclick="menu.hidden^=1" xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 24 24" fill="currentColor"
+             class="size-6" height="24" width="24">
+          <path fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                clip-rule="evenodd"/>
+        </svg>
+        <div hidden id="menu">
+          <ul class="menu-list">
+            <li>
+              <a style="color: #f27868" href="#">Home</a>
+              <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+              <div id="menu2" hidden>
+                <a href="./Pages/home2.html">Home2</a>
+              </div>
+            </li>
             <li><a href="./Pages/about.html">About</a></li>
             <li><a href="./Pages/service.html">Service</a></li>
             <li><a href="./Pages/blog.html">Blogs</a></li>
             <li><a href="./Pages/contact.html">Contact</a></li>
             <li><a href="./Pages/dashboard.html">Dashboard</a></li>
           </ul>
-          <a class="dn" href="./Pages/donate.html">💰Donate Now</a>
-          <a class="login" href="./Pages/login.html"
-            ><i class="fa-solid fa-user"></i>Log in</a
-          >
         </div>
       </div>
-    </nav>
-
-    <div>
-      <swiper-container
-        class="mySwiper"
-        navigation="true"
-        space-between="30"
-        centered-slides="true"
-        autoplay-delay="3500"
-        autoplay-disable-on-interaction="false"
-      >
-        <swiper-slide>
-          <section class="hero">
-            <img
-              src="./Images/3_50.webp"
-              alt="Save Water"
-              class="hero-img"
-            />
-
-            <div class="overlay"></div>
-
-            <div data-aos="zoom-in" class="hero-content">
-              <h1>A Little Amount Of<br />Water Save Life</h1>
-              <p>
-                Every good act is humanity. A man's true wealth hereafter is the
-                good that he does in this world to his fellows.
-              </p>
-              <div class="buttons">
-                <a href="./Pages/contact.html" class="btn primary"
-                  >Join With Us</a
-                >
-                <a href="./Pages/donate.html" class="btn secondary"
-                  >Donate Us</a
-                >
-              </div>
-            </div>
-          </section>
-        </swiper-slide>
-        <swiper-slide>
-          <section class="hero">
-            <img
-              src="./Images/banner-2b_29.webp"
-              alt="Save Water"
-              class="hero-img"
-            />
-
-            <div class="overlay"></div>
-
-            <div class="hero-content">
-              <h1>To Feed Children For a Week</h1>
-              <p>
-                Every good act is humanity. A man's true wealth hereafter is the
-                good that
-                <br />
-                he does in this world to his fellows.
-              </p>
-              <div class="buttons">
-                <a href="./Pages/contact.html" class="btn primary"
-                  >Join With Us</a
-                >
-                <a href="./Pages/donate.html" class="btn secondary"
-                  >Donate Us</a
-                >
-              </div>
-            </div>
-          </section>
-        </swiper-slide>
-        <swiper-slide>
-          <section class="hero">
-            <img
-              src="./Images/post-image2_29.webp"
-              alt="Save Water"
-              class="hero-img"
-            />
-
-            <div class="overlay"></div>
-
-            <div class="hero-content">
-              <h1>Hand to Make Better<br />Life for</h1>
-              <p>
-                Every good act is humanity. A man's true wealth hereafter is the
-                good that he does in this world to his fellows.
-              </p>
-              <div class="buttons">
-                <a href="./Pages/contact.html " class="btn primary"
-                  >Join With Us</a
-                >
-                <a href="./Pages/donate.html" class="btn secondary"
-                  >Donate Us</a
-                >
-              </div>
-            </div>
-          </section>
-        </swiper-slide>
-      </swiper-container>
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      <div class="mb-logo">
+        <a href="./index.html" style="display: flex; align-items: center">
+          <img src="./Images/logo.webp" alt="Stackly Logo" />
+        </a>
+        <a class="dn2" href="./Pages/donate.html">💰Donate Now</a>
+        <a class="login2" href="./Pages/login.html">
+          <i class="fa-solid fa-user"></i>Log in
+        </a>
+      </div>
     </div>
+  </div>
 
-    <section class="intro">
-      <h2 data-aos="fade-up">WELCOME TO <span>HUMANITY</span></h2>
-      <p data-aos="fade-up">
-        We are humanity/ non-profit/ fundraising/ NGO organizations. Our
-        humanity activities are taken place around the world, let contribute to
-        them with us by your hand to be a better life.
-      </p>
-    </section>
-
-    <section class="cards">
-      <div data-aos="flip-left" id="home" class="card">
-        <img
-          class="card-img"
-          data-aos="zoom-in"
-          src="./Images/about1.webp"
-          alt="Support Peoples"
-        />
-        <h3 data-aos="fade-up">Support Peoples</h3>
-        <p data-aos="fade-up" class="tagline">Be Good to People</p>
-        <p data-aos="fade-up">
-          All children are our future. They all deserve our love. Join us to
-          feed, teach, protect, and nurture children in America…
-        </p>
-      </div>
-
-      <div data-aos="flip-left" id="home2" class="card">
-        <img
-          class="card-img"
-          data-aos="zoom-in"
-          src="./Images/protection-restoration-6_o_50.webp"
-          alt="Save Wild Animals"
-        />
-        <h3 data-aos="fade-up">Help the Eco System</h3>
-        <p data-aos="fade-up" class="tagline">Live and Let Live</p>
-        <p data-aos="fade-up">
-          Who loves or pursues or desires to obtain pain of itself, because it
-          is all pain, but occasionally circumstances occur which toil…
-        </p>
-      </div>
-
-      <div data-aos="flip-left" id="home3" class="card">
-        <img
-          class="card-img"
-          data-aos="zoom-in"
-          src="./Images/about3.webp"
-          alt="Protect Our Planet"
-        />
-        <h3 data-aos="fade-up">Protect Our Planet</h3>
-        <p data-aos="fade-up" class="tagline">Stop Destroying Our Planet</p>
-        <p data-aos="fade-up">
-          Pleasure and praising pain was born and I will give you a complete
-          account of the ut system expound the actual teachings…
-        </p>
-      </div>
-    </section>
-
-    <section data-aos="zoom-in" class="causes">
-      <div class="header">
-        <h2 data-aos="zoom-in"><span>URGENT</span> CAUSE</h2>
-        <a data-aos="zoom-in" class="btn2" href="./Pages/blog.html"
-          >ALL CAUSES</a
-        >
-      </div>
-
-      <div class="cause-container">
-        <div id="home7" class="cause-card">
-          <div class="img1">
-            <img
-              data-aos="zoom-in"
-              src="./Images/post-image2_29.webp"
-              alt="Cause 1"
-            />
-
-            <div class="cause-dn">
-              <div class="cause-btn">
-                <a class="dn3" href="./Pages/donate.html">💰Donate Now</a>
+  <!-- Desktop Navbar (original) -->
+  <nav> 
+    <div class="main-menu">
+      <a href="./index.html" style="display: flex; align-items: center">
+        <img src="./Images/logo.webp" alt="Stackly Logo" />
+      </a>
+      <div class="menu-child">
+        <ul class="menu-list2">
+          <div style="position: relative">
+            <li>
+              <a style="color: #f27868" href="#">Home</a>
+              <i onclick="menu3.hidden^=1" class="fa-solid fa-caret-down"></i>
+              <div style="position: absolute; top: 25px; background-color: white">
+                <a href="./Pages/home2.html"
+                   style="background-color: white; border: 1px solid black; padding: 4px;"
+                   id="menu3" hidden>Home2</a>
               </div>
-            </div>
-          </div>
-
-          <div class="cause-content">
-            <h3 data-aos="fade-up">Childrens to get their home</h3>
-            <p data-aos="fade-up">
-              Fusce et augue placerat, dictum velit sit amet, egesta suna. Cras
-              aliquam pretium ornare.
-            </p>
-
-            <div data-aos="fade-up" class="progress">
-              <div class="bar" style="width: 48%"></div>
-              <span class="percent">48%</span>
-            </div>
-            <div data-aos="fade-up" class="goal">
-              <p>Goal: <span>$54000</span></p>
-              <p>Raised: $24000</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="home8" class="cause-card">
-          <div class="img1">
-            <img
-              data-aos="zoom-in"
-              src="./Images/children-forming-line-lane_50.webp"
-              alt="Cause 2"
-            />
-
-            <div class="cause-dn">
-              <div class="cause-btn">
-                <a class="dn3" href="./Pages/donate.html">💰Donate Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cause-content">
-            <h3 data-aos="fade-up">We encourage girls education</h3>
-            <p data-aos="fade-up">
-              Phasellus cursus nunc arcu, eget sollicitudin milacinia tempus.
-              Donec ligula turpis.
-            </p>
-
-            <div data-aos="fade-up" class="progress">
-              <div class="bar" style="width: 75%"></div>
-              <span class="percent">75%</span>
-            </div>
-            <div data-aos="fade-up" class="goal">
-              <p>Goal: <span>$92000</span></p>
-              <p>Raised: $69000</p>
-            </div>
-          </div>
-        </div>
-
-        <div id="home9" class="cause-card">
-          <div class="img1">
-            <img
-              data-aos="zoom-in"
-              src="./Images/childhood-development-3_o_50.webp"
-              alt="Cause 3"
-            />
-
-            <div class="cause-dn">
-              <div class="cause-btn">
-                <a class="dn3" href="./Pages/donate.html">💰Donate Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="cause-content">
-            <h3 data-aos="fade-up">The people to help themselves</h3>
-            <p data-aos="fade-up">
-              Etiam vitae leo diam pellentesque portaed eleifend ultricies risu,
-              vel rutrum commodo.
-            </p>
-
-            <div data-aos="fade-up" class="progress">
-              <div class="bar" style="width: 68%"></div>
-              <span class="percent">68%</span>
-            </div>
-            <div data-aos="fade-up" class="goal">
-              <p>Goal: <span>$78000</span></p>
-              <p>Raised: $49000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <h2 data-aos="zoom-in">ABOUT OUR <span>HUMANITY</span></h2>
-      <div class="underline"></div>
-
-      <div class="about-container">
-        <div class="about-left">
-          <div class="about-item">
-            <img
-              data-aos="flip-left"
-              src="./Images/about5.webp"
-              alt="What We Do"
-            />
-            <div class="text">
-              <h3 data-aos="fade-up">What We Do</h3>
-              <p data-aos="fade-up">
-                Idea of denouncing pleasure and praising pain was born and I
-                will give you a complete account of the system, and expound the
-                actually teachings of the great explorer of the truth.
-              </p>
-            </div>
-          </div>
-
-          <div class="about-item">
-            <img
-              data-aos="flip-left"
-              src="./Images/man-wearing-gray-long-sleeved_50.webp"
-              alt="How It Works"
-            />
-            <div class="text">
-              <h3 data-aos="fade-up">How It Works</h3>
-              <p data-aos="fade-up">
-                Who loves or pursues or desires to obtain pain of itself,
-                because it is pain, because occasionally circumstances occur
-                which toil and pain can procure him some great pleasure.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-right">
-          <p data-aos="fade-up">
-            When you give to Our humanity, you know your donation is making a
-            difference. Whether you are supporting one of our Signature Programs
-            or our carefully curated list of Gifts That Give More, our
-            professional staff works hard every day to ensure every dollar has
-            impact for the cause of your choice.
-          </p>
-
-          <h3 data-aos="fade-up" class="highlight">Years of Experience</h3>
-          <p data-aos="fade-up">
-            We partner with over 320 amazing projects worldwide, and have given
-            over $150 million in cash and product grants to other groups since
-            2011. We also operate our own dynamic suite of Signature Programs.
-          </p>
-
-          <ul>
-            <li data-aos="fade-up">
-              This mistaken idea of denouncing pleasure
             </li>
-            <li data-aos="fade-up">Master-builder of human happiness</li>
-            <li data-aos="fade-up">Occasionally circumstances occur in toil</li>
-            <li data-aos="fade-up">Undertakes laborious physical exercise</li>
-          </ul>
-        </div>
+          </div>
+          <li><a href="./Pages/about.html">About</a></li>
+          <li><a href="./Pages/service.html">Service</a></li>
+          <li><a href="./Pages/blog.html">Blogs</a></li>
+          <li><a href="./Pages/contact.html">Contact</a></li>
+          <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+        </ul>
+        <a class="dn" href="./Pages/donate.html">💰Donate Now</a>
+        <a class="login" href="./Pages/login.html">
+          <i class="fa-solid fa-user"></i>Log in
+        </a>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <div data-aos="zoom-in" id="stat">
-      <section id="impact" data-aos="fade-up" class="stats-section">
-        <div data-aos="zoom-in" class="stat-box">
-          <div class="icon2">
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <h2 class="counter" data-target="1750">0</h2>
-          <p>PROJECT DONE</p>
-        </div>
+  <!-- Hero Section with AOS -->
+  <section class="hero" data-aos="fade-in" data-aos-duration="1200">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-shiny-geometric-video-loop-12169-large.mp4" type="video/mp4">
+    </video>
 
-        <div data-aos="zoom-in" class="stat-box">
-          <div class="icon2">
-            <i class="fas fa-bullhorn"></i>
-          </div>
-          <h2 class="counter" data-target="350">0</h2>
-          <p>MEDIA ACTIVITIES</p>
-        </div>
+    <div class="floating float1" data-aos="fade-down" data-aos-delay="300">
+      <i class="fas fa-heart" style="font-size: 3rem; color: white; opacity: 0.7;"></i>
+    </div>
+    <div class="floating float2" data-aos="fade-down" data-aos-delay="500">
+      <i class="fas fa-hands-helping" style="font-size: 2.5rem; color: white; opacity: 0.6;"></i>
+    </div>
+    <div class="floating float3" data-aos="fade-up" data-aos-delay="700">
+      <i class="fas fa-globe" style="font-size: 2rem; color: white; opacity: 0.8;"></i>
+    </div>
+    
+    <div class="hero-content" data-aos="zoom-in-up" data-aos-delay="400">
+      <h1>A Little Amount Of<br>Water Save Life</h1>
+      <p>Every good act is humanity. A man's true wealth hereafter is the good that he does in this world to his fellows.</p>
+      <div class="cta-buttons">
+        <a href="./Pages/contact.html" class="btn btn-primary" data-aos="fade-right" data-aos-delay="700">
+          <i class="fas fa-users"></i> Join With Us
+        </a>
+        <a href="./Pages/donate.html" class="btn btn-secondary" data-aos="fade-left" data-aos-delay="800">
+          <i class="fas fa-heart"></i> Donate Us
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <div data-aos="zoom-in" class="stat-box">
-          <div class="icon2">
-            <i class="fas fa-user-tie"></i>
-          </div>
-          <h2 class="counter" data-target="350">0</h2>
-          <p>TEAM MEMBERS</p>
-        </div>
+  <!-- Welcome Section -->
+  <section class="section intro" data-aos="fade-up" data-aos-duration="900">
+    <div class="container">
+      <h2 class="section-title">WELCOME TO <span>HUMANITY</span></h2>
+      <p>We are humanity/non-profit/fundraising/NGO organizations. Our humanity activities are taken place around the world, let contribute to them with us by your hand to be a better life.</p>
+    </div>
+  </section>
 
-        <div data-aos="zoom-in" class="stat-box">
-          <div class="icon2">
+  <!-- Cards Section -->
+  <section class="section cards-section">
+    <div class="container">
+      <div class="cards-grid">
+        <div class="card" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-icon icon-people">
             <i class="fas fa-users"></i>
           </div>
-          <h2 class="counter" data-target="35"></h2>
-          <p>YEARS OF EXPERIENCE</p>
+          <h3>Support Peoples</h3>
+          <p class="card-tagline">Be Good to People</p>
+          <p>All children are our future. They all deserve our love. Join us to feed, teach, protect, and nurture children in America…</p>
         </div>
-      </section>
-    </div>
-
-    <h2 data-aos="zoom-in" class="section-title">Latest From News</h2>
-
-    <div data-aos="zoom-in" class="news-container">
-      <div id="home4" class="news-card">
-        <div class="news-image">
-          <img
-            class="news-img"
-            data-aos="flip-left"
-            src="./Images/post-image2_29.webp"
-            alt="News Image 1"
-          />
-          <span data-aos="flip-left" class="badge">Awareness</span>
+        <div class="card" data-aos="fade-up" data-aos-delay="150">
+          <div class="card-icon icon-eco">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Help the Eco System</h3>
+          <p class="card-tagline">Live and Let Live</p>
+          <p>Who loves or pursues or desires to obtain pain of itself, because it is all pain, but occasionally circumstances occur which toil…</p>
         </div>
-        <div class="news-content">
-          <p data-aos="fade-up" class="news-date">
-            February 05, 2017 | 10 Comments
-          </p>
-          <h3 data-aos="fade-up" class="news-title">
-            New Award To Support Children Affected by Crises
-          </h3>
-          <p data-aos="fade-up" class="news-description">
-            Explain to you how all this mistaken idea of denouncing pleasure and
-            praising pain was born give you a complete.
-          </p>
-        </div>
-      </div>
-
-      <div id="home5" class="news-card">
-        <div class="news-image">
-          <img
-            class="news-img"
-            data-aos="flip-left"
-            src="./Images/healthy-food-for-all-7_o_50.webp"
-            alt="News Image 2"
-          />
-          <span data-aos="flip-left" class="badge">Awareness</span>
-        </div>
-        <div class="news-content">
-          <p data-aos="fade-up" class="news-date">
-            February 05, 2017 | 10 Comments
-          </p>
-          <h3 data-aos="fade-up" class="news-title">
-            New Award To Support Children Affected by Crises
-          </h3>
-          <p data-aos="fade-up" class="news-description">
-            Explain to you how all this mistaken idea of denouncing pleasure and
-            praising pain was born give you a complete.
-          </p>
-        </div>
-      </div>
-
-      <div id="home6" class="news-card">
-        <div class="news-image">
-          <img
-            class="news-img"
-            data-aos="flip-left"
-            src="./Images/in3_50.webp"
-            alt="News Image 3"
-          />
-          <span data-aos="flip-left" class="badge">Awareness</span>
-        </div>
-        <div class="news-content">
-          <p data-aos="fade-up" class="news-date">
-            February 05, 2017 | 10 Comments
-          </p>
-          <h3 data-aos="fade-up" class="news-title">
-            New Award To Support Children Affected by Crises
-          </h3>
-          <p data-aos="fade-up" class="news-description">
-            Explain to you how all this mistaken idea of denouncing pleasure and
-            praising pain was born give you a complete.
-          </p>
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-icon icon-planet">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Protect Our Planet</h3>
+          <p class="card-tagline">Stop Destroying Our Planet</p>
+          <p>Pleasure and praising pain was born and I will give you a complete account of the ut system expound the actual teachings…</p>
         </div>
       </div>
     </div>
+  </section>
 
-    <div data-aos="zoom-in" id="client" class="slider">
-      <h2
-        data-aos="zoom-in"
-        style="
-          text-align: center;
-          padding-top: 10px;
-          font-weight: 500;
-          padding-bottom: 15px;
-          text-transform: uppercase;
-          font-family: Roboto Slab;
-        "
-      >
-        Our Trusted Clients
-      </h2>
-      <div class="slide-track">
-        <div class="slide">
-          <h3 class="blue">BUSINESS</h3>
-          <p>commercial property</p>
-        </div>
-        <div class="slide">
-          <h3 class="green">greenlab</h3>
-          <p>biotechnology</p>
-        </div>
-        <div class="slide">
-          <h3 class="red">FORMLABS</h3>
-          <p>creative letters</p>
-        </div>
-        <div class="slide">
-          <h3 class="yellow">QUALIA</h3>
-          <p>CREATIVE GEMS</p>
-        </div>
-        <div class="slide">
-          <h3 class="purple">MOTUL</h3>
-          <p>tech solutions</p>
-        </div>
-        <div class="slide">
-          <h3 class="orange">ACTIVISION</h3>
-          <p>future ideas</p>
-        </div>
-        <div class="slide">
-          <h3 class="teal">AQUA</h3>
-          <p>marine services</p>
-        </div>
-        <div class="slide">
-          <h3 class="pink">FLORA</h3>
-          <p>organic products</p>
-        </div>
-        <div class="slide">
-          <h3 class="brown">EARTH</h3>
-          <p>construction</p>
-        </div>
-        <div class="slide">
-          <h3 class="gray">METRO</h3>
-          <p>urban planning</p>
-        </div>
+  <!-- Causes Section -->
+  <section class="section causes-section">
+    <div class="container" data-aos="fade-up" data-aos-duration="900">
+      <div class="section-header" data-aos="fade-right">
+        <h2 class="section-title"><span>URGENT</span> CAUSE</h2>
+        <a href="./Pages/blog.html" class="btn btn-secondary" data-aos="zoom-in" data-aos-delay="200">ALL CAUSES</a>
       </div>
-    </div>
-
-    <footer data-aos="zoom-in" id="footer" class="site-footer">
-      <div class="footer-main">
-        <div class="footer-section about2">
-          <h2 class="footer-title">STACKLY</h2>
-          <p>
-            We partner with over 320 amazing projects worldwide, and have given
-            over $150 million in cash and product grants to other groups since
-            2011.
-          </p>
+      <div class="causes-grid">
+        <div class="cause-card" data-aos="flip-left" data-aos-delay="0">
+          <div class="cause-image">
+            <img src="./Images/post-image2_29.webp" alt="Childrens to get their home">
+            <div class="cause-overlay">
+              <a href="./Pages/donate.html" class="dn3">💰Donate Now</a>
+            </div>
+          </div>
+          <div class="cause-content">
+            <h3>Childrens to get their home</h3>
+            <p>Fusce et augue placerat, dictum velit sit amet, egesta suna. Cras aliquam pretium ornare.</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 48%"></div>
+              <div class="progress-percent">48%</div>
+            </div>
+            <div class="goal">
+              <span>Goal: $54,000</span>
+              <span>Raised: $24,000</span>
+            </div>
+          </div>
         </div>
-
-        <div class="footer-section links">
-          <h3 class="footer-title">About Us</h3>
-          <ul>
-            <li><a href="./Pages/about.html">About us</a></li>
-            <li><a href="./Pages/dashboard.html">History</a></li>
-            <li><a href="./Pages/about.html">Partners</a></li>
-            <li><a href="./Pages/service.html">Career</a></li>
-            <li><a href="./Pages/about.html">Our Team</a></li>
-          </ul>
+        <div class="cause-card" data-aos="flip-left" data-aos-delay="150">
+          <div class="cause-image">
+            <img src="./Images/children-forming-line-lane_50.webp" alt="Girls education">
+            <div class="cause-overlay">
+              <a href="./Pages/donate.html" class="dn3">💰Donate Now</a>
+            </div>
+          </div>
+          <div class="cause-content">
+            <h3>We encourage girls education</h3>
+            <p>Phasellus cursus nunc arcu, eget sollicitudin milacinia tempus. Donec ligula turpis.</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 75%"></div>
+              <div class="progress-percent">75%</div>
+            </div>
+            <div class="goal">
+              <span>Goal: $92,000</span>
+              <span>Raised: $69,000</span>
+            </div>
+          </div>
         </div>
-
-        <div class="footer-section links">
-          <h3 class="footer-title">Quick Links</h3>
-          <ul>
-            <li><a href="./Pages/service.html">Our Cases</a></li>
-            <li><a href="./Pages/testimonials.html">Testimonials</a></li>       
-            <li><a href="./Pages/explanation.html">Gallery </a></li>
-            <li><a href="./Pages/contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-section office-worldwide">
-          <h3 class="footer-title">Office</h3>
-
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-              width="250"
-              height="150"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            >
-            </iframe>
+        <div class="cause-card" data-aos="flip-left" data-aos-delay="300">
+          <div class="cause-image">
+            <img src="./Images/childhood-development-3_o_50.webp" alt="Self help">
+            <div class="cause-overlay">
+              <a href="./Pages/donate.html" class="dn3">💰Donate Now</a>
+            </div>
+          </div>
+          <div class="cause-content">
+            <h3>The people to help themselves</h3>
+            <p>Etiam vitae leo diam pellentesque portaed eleifend ultricies risu, vel rutrum commodo.</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 68%"></div>
+              <div class="progress-percent">68%</div>
+            </div>
+            <div class="goal">
+              <span>Goal: $78,000</span>
+              <span>Raised: $49,000</span>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="footer-bottom">
-        <p>© 2020 Stackly, All rights reserved</p>
-        <div class="social-icons">
-          <a href="./Pages/error.html"><i class="fab fa-facebook-f"></i></a>
-          <a href="./Pages/error.html"><i class="fab fa-twitter"></i></a>
-          <a href="./Pages/error.html"><i class="fab fa-linkedin-in"></i></a>
-          <a href="./Pages/error.html"><i class="fab fa-instagram"></i></a>
+  <!-- About Our Humanity Section -->
+<section class="section about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text" data-aos="fade-right">
+        <h2 class="section-title about-title">About Our <span>Humanity</span></h2>
+        <p class="about-lead">
+          For more than a decade, Stackly has partnered with communities to bring
+          education, clean water, food security and emergency relief to people in need.
+        </p>
+        <ul class="about-list">
+          <li>Over 320 active projects impacting vulnerable families worldwide.</li>
+          <li>Transparent reporting so every donation is tracked and celebrated.</li>
+          <li>Local volunteers and partners leading sustainable change on the ground.</li>
+          <li>Focus on children, climate resilience, and community empowerment.</li>
+        </ul>
+      </div>
+
+      <div class="about-cards" data-aos="fade-left">
+        <div class="about-mini-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Education</h3>
+          <p>Scholarships, school kits and digital classrooms for every child.</p>
+        </div>
+        <div class="about-mini-card">
+          <i class="fas fa-tint"></i>
+          <h3>Clean Water</h3>
+          <p>Wells, filters and hygiene training for safe drinking water.</p>
+        </div>
+        <div class="about-mini-card">
+          <i class="fas fa-apple-alt"></i>
+          <h3>Nutrition</h3>
+          <p>Community kitchens and food baskets for families in crisis.</p>
+        </div>
+        <div class="about-mini-card">
+          <i class="fas fa-hands-helping"></i>
+          <h3>Relief</h3>
+          <p>Rapid-response teams for floods, droughts and displacement.</p>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+</section>
 
-    <script>
-      VANTA.DOTS({
-        el: "#home",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x3a14bb,
-        color2: 0xa25716,
-        backgroundColor: 0xf5f3f3,
-        showLines: false,
-      });
-    </script>
 
-    <script>
-      VANTA.DOTS({
-        el: "#home2",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x3a14bb,
-        color2: 0xa25716,
-        backgroundColor: 0xf5f3f3,
-        showLines: false,
-      });
-    </script>
+  <!-- Stats Section -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="stat-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="stat-number" data-target="1750">0</div>
+          <p>PROJECTS DONE</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="stat-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <div class="stat-number" data-target="350">0</div>
+          <p>MEDIA ACTIVITIES</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <div class="stat-number" data-target="350">0</div>
+          <p>TEAM MEMBERS</p>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="450">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-number" data-target="35">0</div>
+          <p>YEARS EXPERIENCE</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      VANTA.DOTS({
-        el: "#home3",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x3a14bb,
-        color2: 0xa25716,
-        backgroundColor: 0xf5f3f3,
-        showLines: false,
-      });
-    </script>
-    <script>
-      VANTA.DOTS({
-        el: "#home4",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x3a14bb,
-        color2: 0xa25716,
-        backgroundColor: 0xf5f3f3,
-        showLines: false,
-      });
-    </script>
-    <script>
-      VANTA.DOTS({
-        el: "#home5",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x3a14bb,
-        color2: 0xa25716,
-        backgroundColor: 0xf5f3f3,
-        showLines: false,
-      });
-    </script>
-    <script>
-      VANTA.DOTS({
-        el: "#home6",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x3a14bb,
-        color2: 0xa25716,
-        backgroundColor: 0xf5f3f3,
-        showLines: false,
-      });
-    </script>
+  <!-- CALL-TO-ACTION SECTION -->
+<section class="cta-section" id="cta">
+    <div class="cta-container">
+        <div class="cta-content">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Join thousands of volunteers changing lives every day</p>
+            <div class="cta-buttons">
+                <a href="./Pages/contact.html" class="cta-main-btn">Start Volunteering</a>
+                <a href="./Pages/donate.html" class="cta-secondary-btn">Donate Now</a>
+            </div>
+        </div>
+        <div class="cta-image">
+            <i class="fas fa-heart hands-glow"></i>
+        </div>
+    </div>
+</section>
 
-    <script>
-      VANTA.BIRDS({
-        el: "#stat",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color1: 0x9c17d4,
-        color2: 0x2ce1e1,
-      });
-    </script>
 
-    <script>
-      VANTA.BIRDS({
-        el: "#home7",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        backgroundColor: 0xfdfeff,
-        color1: 0xaf2294,
-        color2: 0x2ce1e1,
-      });
-    </script>
-    <script>
-      VANTA.BIRDS({
-        el: "#home8",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        backgroundColor: 0xfdfeff,
-        color1: 0xaf2294,
-        color2: 0x2ce1e1,
-      });
-    </script>
-    <script>
-      VANTA.BIRDS({
-        el: "#home9",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        backgroundColor: 0xfdfeff,
-        color1: 0xaf2294,
-        color2: 0x2ce1e1,
-      });
-    </script>
-    <script>
-      VANTA.DOTS({
-        el: "#client",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0xa623c3,
-        backgroundColor: 0xd9d9d9,
-        showLines: false,
-      });
-    </script>
-    <script>
-      VANTA.NET({
-        el: "#footer",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        color: 0x7417a7,
-      });
-    </script>
+  <!-- News Section -->
+  <section class="section news-section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Latest From News</h2>
+      <div class="news-grid">
+        <div class="news-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="news-image">
+            <img src="./Images/post-image2_29.webp" alt="News 1" class="news-img">
+            <span class="news-badge">Awareness</span>
+          </div>
+          <div class="news-content">
+            <p class="news-date">February 05, 2017 | 10 Comments</p>
+            <h3 class="news-title">New Award To Support Children Affected by Crises</h3>
+            <p class="news-description">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+          </div>
+        </div>
+        <div class="news-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="news-image">
+            <img src="./Images/healthy-food-for-all-7_o_50.webp" alt="News 2" class="news-img">
+            <span class="news-badge">Awareness</span>
+          </div>
+          <div class="news-content">
+            <p class="news-date">February 05, 2017 | 10 Comments</p>
+            <h3 class="news-title">New Award To Support Children Affected by Crises</h3>
+            <p class="news-description">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+          </div>
+        </div>
+        <div class="news-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="news-image">
+            <img src="./Images/in3_50.webp" alt="News 3" class="news-img">
+            <span class="news-badge">Awareness</span>
+          </div>
+          <div class="news-content">
+            <p class="news-date">February 05, 2017 | 10 Comments</p>
+            <h3 class="news-title">New Award To Support Children Affected by Crises</h3>
+            <p class="news-description">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll(".counter");
-        const speed = 150;
 
-        const animateCounter = (counter) => {
-          const target = +counter.getAttribute("data-target");
-          const updateCount = () => {
-            const count = +counter.innerText;
-            const increment = Math.ceil(target / speed);
+    <!-- ========== SECTION 2: IMPACT STATS ========== -->
+<section class="impact-section">
+  <div class="container">
+    <div class="impact-content">
+      <div class="impact-text">
+        <h2>Our <span>Impact in 2025</span></h2>
+        <p>Making real difference in Madurai community through sustainable programs</p>
+        <a href="#" class="cta-button">See All Impact Reports</a>
+      </div>
+      
+      <div class="impact-stats">
+        <div class="stat-item">
+          <div class="stat-number" data-target="2500">0</div>
+          <div class="stat-label">Families Helped</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="150">0</div>
+          <div class="stat-label">Learning Centers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="12000">0</div>
+          <div class="stat-label">Meals Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="450">0</div>
+          <div class="stat-label">Volunteers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-            if (count < target) {
-              counter.innerText = count + increment;
-              setTimeout(updateCount, 20);
-            } else {
-              counter.innerText = target;
-            }
-          };
-          updateCount();
+
+
+  <!-- How You Can Help Section -->
+<section class="section help-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">How You Can <span>Help</span></h2>
+
+    <div class="help-grid">
+      <div class="help-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="help-icon">
+          <i class="fas fa-donate"></i>
+        </div>
+        <h3>Give Monthly</h3>
+        <p>
+          Become a monthly donor and sustain food, water and education programs
+          with a predictable gift that communities can rely on.
+        </p>
+        <a href="./Pages/donate.html" class="help-link">Start a Monthly Gift →</a>
+      </div>
+
+      <div class="help-card" data-aos="zoom-in" data-aos-delay="150">
+        <div class="help-icon">
+          <i class="fas fa-hands"></i>
+        </div>
+        <h3>Volunteer Your Time</h3>
+        <p>
+          Join local Stackly campaigns, awareness drives and digital advocacy
+          from anywhere in the world using your skills and passion.
+        </p>
+        <a href="./Pages/contact.html" class="help-link">Join as Volunteer →</a>
+      </div>
+
+      <div class="help-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="help-icon">
+          <i class="fas fa-share-alt"></i>
+        </div>
+        <h3>Share the Story</h3>
+        <p>
+          Use your social platforms to highlight real stories, fundraisers and
+          campaigns so more people can stand with humanity.
+        </p>
+        <a href="./Pages/blog.html" class="help-link">Explore Campaigns →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Clients Section -->
+  <section class="clients-section">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title">Our Trusted Clients</h2>
+      <div class="clients-slider" data-aos="fade-up" data-aos-delay="200">
+        <div class="clients-track">
+          <div class="client-logo">
+            <h3 class="blue">BUSINESS</h3>
+            <p>commercial property</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="green">greenlab</h3>
+            <p>biotechnology</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="red">FORMLABS</h3>
+            <p>creative letters</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="yellow">QUALIA</h3>
+            <p>CREATIVE GEMS</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="purple">MOTUL</h3>
+            <p>tech solutions</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="orange">ACTIVISION</h3>
+            <p>future ideas</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="teal">AQUA</h3>
+            <p>marine services</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="pink">FLORA</h3>
+            <p>organic products</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="brown">EARTH</h3>
+            <p>construction</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="gray">METRO</h3>
+            <p>urban planning</p>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="client-logo">
+            <h3 class="blue">BUSINESS</h3>
+            <p>commercial property</p>
+          </div>
+          <div class="client-logo">
+            <h3 class="green">greenlab</h3>
+            <p>biotechnology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (original) -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-section about2">
+        <h2 class="footer-title">STACKLY</h2>
+        <p>We partner with over 320 amazing projects worldwide, and have given over $150 million in cash and product grants to other groups since 2011.</p>
+      </div>
+      <div class="footer-section links">
+        <h3 class="footer-title">About Us</h3>
+        <ul>
+          <li><a href="./Pages/about.html">About us</a></li>
+          <li><a href="./Pages/dashboard.html">History</a></li>
+          <li><a href="./Pages/about.html">Partners</a></li>
+          <li><a href="./Pages/service.html">Career</a></li>
+          <li><a href="./Pages/about.html">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-section links">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul>
+          <li><a href="./Pages/service.html">Our Cases</a></li>
+          <li><a href="./Pages/testimonials.html">Testimonials</a></li>       
+          <li><a href="./Pages/explanation.html">Gallery</a></li>
+          <li><a href="./Pages/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section office-worldwide">
+        <h3 class="footer-title">Office</h3>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+                  width="250" height="150" style="border: 0"
+                  allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2020 Stackly, All rights reserved</p>
+      <div class="social-icons">
+        <a href="./Pages/error.html"><i class="fab fa-facebook-f"></i></a>
+        <a href="./Pages/error.html"><i class="fab fa-twitter"></i></a>
+        <a href="./Pages/error.html"><i class="fab fa-linkedin-in"></i></a>
+        <a href="./Pages/error.html"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Counter Animation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.stat-number');
+      const speed = 200;
+
+      const animateCounter = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        const increment = target / speed;
+        let current = 0;
+
+        const updateCounter = () => {
+          if (current < target) {
+            current += increment;
+            counter.innerText = Math.floor(current);
+            setTimeout(updateCounter, 20);
+          } else {
+            counter.innerText = target;
+          }
         };
+        updateCounter();
+      };
 
-        const observer = new IntersectionObserver(
-          (entries, observer) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.5 }
-        );
-
-        counters.forEach((counter) => {
-          observer.observe(counter);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+          }
         });
-      });
-    </script>
+      }, { threshold: 0.5 });
 
-    <script>
-      // $(document).on('ready', function () {
-      // initialization of aos
-      AOS.init({
-        duration: 650,
-        once: false,
-        mirror: true,
-      });
-    </script>
-  </body>
+      counters.forEach(counter => observer.observe(counter));
+    });
+  </script>
+
+  <!-- AOS JS + init -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      offset: 120,
+      easing: 'ease-out-quart',
+      once: false,
+      mirror: true
+    });
+  </script>
+</body>
 </html>
